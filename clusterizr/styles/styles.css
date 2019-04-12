@@ -1,0 +1,15 @@
+#firstset {
+	border: 1px solid black;
+}
+
+#home {
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-right: 5px;
+	
+}
+
+.nav>li>a {
+    
+    color: #FFC904;
+}
