@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600,600i');
+
+body{
+	font-family: Avenir, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
 #firstset {
 	border: 1px solid black;
 }
@@ -6,10 +17,9 @@
 	margin-left: 5px;
 	margin-top: 10px;
 	margin-right: 5px;
-	
+
 }
 
 .nav>li>a {
-    
     color: #FFC904;
 }
