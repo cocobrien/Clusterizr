@@ -27,3 +27,7 @@ h1,h2,h3,h4,h5,h6{
 .btn{
 	color: #ffffff;
 }
+
+.btn-outline-warning{
+	color: #FFC904;
+}
