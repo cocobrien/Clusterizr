@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	
+	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<script>
+    function newDoc() {
+                 window.location.assign("clusterizr_home.html")
+            }
+            </script>
+	
+    <title>Clusterizr Login</title>
+	
+<style>
+html,body{
+background-image: url('http://getwallpapers.com/wallpaper/full/4/9/8/158687.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+overflow: hidden;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+#login .card{
+height: 370px;
+margin-top: 6%;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.8) !important;
+}
+
+#signup .card{
+height: 480px;
+margin-top: 6%;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.8) !important;
+}
+
+#forgot_password .card{
+height: 370px;
+margin-top: 6%;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.8) !important;
+color: white;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+
+}
+.social_icon a:link{
+text-decoration: none;
+color: #FFC312;
+}
+.social_icon a:visited{
+text-decoration: none;
+color: #FFC312;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px; 
+}
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+#forgot_password .login_btn{
+color: black;
+background-color: #FFC312;
+width: 150px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.card-footer{
+    color: white;
+}
+
+#forgot_password{
+    display: none;
+}
+#signup{
+    display: none;
+}
+.logodiv{
+	margin-top: 5%;
+	margin-bottom: 3%;
+	}
+#logo{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	margin: 0 auto;
+	}	
+</style>
+</head>
+  
+  <body>
+  <div class="logodiv d-flex justify-content-center"><img id="logo" alt="logo" src="images/logo_white@2x.png"> </div>
+    <div id="login" class="container">
+		 
+        <div class="d-flex justify-content-center h-50">
+			
+            <div class="card">
+                <div class="card-header">
+                    <h3>Sign In</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><a href="clusterizr_home.html"><i class="fab fa-facebook-square"></i></a></span>
+                        <span><a href="clusterizr_home.html"><i class="fab fa-twitter-square"></i></a></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="username">
+                            
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="password">
+                        </div>
+                        <div class="row align-items-center remember">
+                            <input type="checkbox">Remember Me
+                        </div>
+                        <div class="form-group">
+                                
+                            <input type="button" value="Login" class="btn float-right login_btn" onclick="newDoc()">
+        
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        Don't have an account? &nbsp; <a href="#" onclick="loadSignUp()">Sign Up</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" onclick="loadForgotPassword()">Forgot your password?</a>
+                        </div>
+                  </div>
+             </div>
+         </div>
+    </div>
+
+    <div id="forgot_password" class="container">
+       
+            <div class="d-flex justify-content-center h-100">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Forgot Password</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Please enter your email and you will recieve an email with a new password.</p>
+                        <form>
+                            <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-envelope-square"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="email">
+                                </div>
+                            <div class="form-group">
+                                
+                                <input type="button" value="Reset Password" class="btn float-right login_btn" onclick="newDoc()">
+                            
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-center links">
+                            Don't have an account? &nbsp; <a href="#" onclick="loadSignUp()">Sign Up</a>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            Have an account?&nbsp;<a href="#" onclick="loadLogin()">Login</a>
+                            </div>
+                      </div>
+                 </div>
+             </div>
+        </div>
+
+        <div id="signup" class="container">
+       
+                <div class="d-flex justify-content-center h-100">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Sign-Up</h3>
+                            <div class="d-flex justify-content-end social_icon">
+                                    <span><a href="clusterizr_home.html"><i class="fab fa-facebook-square"></i></a></span>
+                                    <span><a href="clusterizr_home.html"><i class="fab fa-twitter-square"></i></a></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                    <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-users"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="username">
+                                        </div>
+                                        <div class="input-group form-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="First Name">
+                                            </div>
+                                            <div class="input-group form-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Last Name">
+                                                </div>
+                                                <div class="input-group form-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                                        </div>
+                                                        <input type="password" class="form-control" placeholder="Password">
+                                                    </div>
+                                                    <div class="input-group form-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i class="fas fa-envelope-square"></i></span>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="email">
+                                                        </div>
+                                                        <div class="form-group">
+
+                                                                <input type="button" value="Sign-Up" class="btn float-right login_btn" onclick="newDoc()">
+                                
+                                                            </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-center links">
+                                    Have an account?&nbsp; <a href="#" onclick="loadLogin()">Login</a>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                    <a href="#" onclick="loadForgotPassword()">Forgot your password?</a>
+                                </div>
+                          </div>
+                     </div>
+                 </div>
+            </div>
+
+            <script>
+                var login = document.getElementById('login');
+                var signup = document.getElementById('signup');
+                var forgotpassword = document.getElementById('forgot_password');
+
+            
+
+            function loadLogin(){
+                login.style.display = "block";
+
+                signup.style.display = "none";
+                
+                forgotpassword.style.display = "none";
+            }
+
+            function loadForgotPassword(){
+                login.style.display = "none";
+
+                signup.style.display = "none";
+
+                forgotpassword.style.display = "block";
+            }
+
+            function loadSignUp(){
+                login.style.display = "none";
+
+                signup.style.display = "block";
+
+                forgotpassword.style.display = "none";
+            }
+            
+            </script>
+  </body>
+</html>
