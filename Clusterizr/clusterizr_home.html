@@ -1,28 +1,144 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home | Clusterizr</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Bootstrap CSS - UPDATED TO NEWEST VERSION - SAMANTHA S -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="styles/styles.css">
 	
+	<!--- FONT AWESOME FOR ICONS - SAMANTHA S --->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
 	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+   
+   
+    <style>
+        /*--- ADDED CLASSES - SAMANTHA S ---*/
+        .text-yellow {
+            color: #FFC904 !important;
+        }
+        .text-black {
+            color: black;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .text-blue {
+            color: #0066ff;
+        }
+        .text-gray {
+            color: lightgray;
+        }
+        .btn-red {
+            background: #F13959;
+            color: white;
+        }
+        .btn-red:hover {
+            color: white;
+            background: #bc2d45;
+        }
+        .btn-yellow{
+            background: #ffc904;
+            color: black;
+        }
+        .btn-yellow:hover {
+            background: #e2b204;
+        }
+        .bg-black {
+            background: #000;
+        }
+        .twitter{
+            color:#55acee;
+        }
+        .facebook {
+            color: #3b5998;
+        }
+        .insta {
+            color: #7232bd; 
+        }
+        .linkedin {
+            color: #0077b5;
+        }
+        .github {
+            color: #6e5494;
+        }
+        .btn-styled {
+            min-width: 180px;
+        }
+        .profile-img {
+            max-width: 300px;
+        }
+        .similar-pro-img {
+            padding: 0;
+            text-align: left;
+            margin: 0;
+        }
+        
+        .force-vert-align {
+            vertical-align: middle;
+        }
+        
+        /*--- NAVBAR FIX? ---*/
 
+        
+        /*--- RESPONSIVENESS - SAMANTHA S ---*/
+        
+        /*Small devices (landscape phones, 576px and below)*/
+        @media all and (max-width: 576px) {
+
+            
+            .updates-card h5, .similar-profiles{
+                text-align: center!important;
+            }
+            .recent-activity-content{
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+            .my-info .btn {
+                display: block;
+            }
+
+        }
+
+        /*Medium devices (tablets, 768px and below)*/
+        @media all and (max-width: 992px) { 
+
+            .updates-card h5, .similar-profiles{
+                text-align: center!important;
+            }
+            .recent-activity-content{
+                padding-left: 2em;
+                padding-right: 2em;
+            }
+            .my-info .btn {
+                margin: 1em;
+            }
+            .center-img{
+                text-align: center!important;
+            }
+
+        }
+        
+    </style>
+</head>
 	
 	
-    <title>Clusterizr</title>
-	
-	
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"></img></a>
+    
+<header>	
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -32,7 +148,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="clusterizr_home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="messages.html">Notifications</a>
@@ -40,8 +159,15 @@
       <li class="nav-item">
         <a class="nav-link" href="mynetwork.html">My Network</a>
       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="careersalary.html">Career</a>
+	  
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="careersalary.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Career
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="careersalary.html">Career - Salaries</a>
+          <a class="dropdown-item" href="careerjobs.html">Career - Jobs</a>
+        </div>
       </li>
 	  
 	  <li class="nav-item">
@@ -49,6 +175,9 @@
       </li>
 	  <li class="nav-item">
         <a class="nav-link" href="myaccount.html">My Account</a>
+      </li>
+      <li class="nav item">
+          <a class="nav-link" href="contact.html">Contact</a>
       </li>
     </ul>
 	  <form class="form-inline my-2 my-lg-0">
@@ -58,112 +187,174 @@
 	  
 	  <ul class="nav justify-content-end">
       <li class="nav-item" style="float:right">
-        <a style="color:#FFC904" href="#">Log Out</a>
+        <a style="color:#FFC904" href="signin.html">Log Out</a>
       </li>
     </ul>
     
   </div>
 </nav>
-</head>
-  
-  <body>
-  
-  <div class="container-fluid" style="margin:5px; padding-top:5px;">
-  <div class="row">
-  
-    <div class="col-3">
-	<div class="card" >
-	<div class="card-header"> My Info </div>
-	<img src="images/Avatar.png" class="card-img-top" alt="profile avatar">
-	<div class="card-body">
-    <h5 class="card-title">Profile</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	</div>
-	</div>
-	</div>
-	
-	
-    <div class="col-6">
-	<div class="card">
-		<div class="card-header">
-		Create a Post
-		</div>
-		<div class="card-body">
-		<blockquote class="blockquote mb-0">
-		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-		  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-		</blockquote>
-		</div>
-		</div>
-	
-		<div class="card" >
-		<div class="card-header"> Posts </div>
-		<div class="card-body">
-		<h5 class="card-title"> My First Post</h5>
-		<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		<div class="card text-center">
-		<a href="#" class="btn btn-warning">Update Feed</a>
-		</div>
-		</div>
-		</div>
-		</div>
-		
-		
-    <div class="col-3">
-	<div class="card" >
-		<div class="card-header"> Recent News </div>
-		<div class="card-body">
-		<h5 class="card-title">The News Article</h5>
-		<h6 class="card-subtitle mb-2 text-muted">By: Johnny Doe</h6>
-		<p class="card-text">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		Vestibulum eu tellus eget mauris tristique laoreet. 
-		Nunc elementum mi sit amet metus congue dignissim. 
-		Fusce rhoncus venenatis nibh vulputate aliquet. 
-		Quisque at cursus leo, sit amet maximus dolor. 
-		Nullam dolor nunc, convallis ut tellus a, consectetur mattis diam. 
-		Nunc ut urna justo. Phasellus condimentum est ut nibh porttitor, eu finibus urna posuere.</p>
-		<a href="#" class="card-link">Link to Article</a>
-		
-		</div>
-		</div>
-	</div>
-  </div>
-  
-  <div class="row">
-  	
-	<div class="col-2">
-	<ul class="nav flex-column" style="padding-left: 25px;">
-	
-		<li class="nav-item">
-        <a class="nav-link" style="color:#FFC904;" href="#">
-		<img src="images/Messages.png" style="padding-right: 5px;"></img><b> Messages </b></a>
-		</li>
-		
-		<li class="nav-item">
-        <a class="nav-link" style="color:#FFC904;" href="#">
-		<img src="images/Sections.png" style="padding-right: 5px;"></img><b>My Pages</b></a>
-		</li>
-		
-		<li class="nav-item">
-        <a class="nav-link" style="color:#FFC904;" href="#">
-		<img src="images/Search.png" style="padding-right: 5px;"></img><b>Explore</b></a>
-		</li>
-		
-		<li class="nav-item">
-        <a class="nav-link" style="color:#FFC904;" href="#">
-		<img src="images/Profile.png" style="padding-right: 5px;"></img><b>My Network</b></a>
-		</li>
-	</ul>
-	</div>
- 
-  </div>
-  </div>
-  
- 
 
- 
+	
+    
+    
+    
+    
+</header>
   
-  </body>
+<body>
+   
+    <!-- MAIN CONTAINER WITH MARGIN TOP AND BOTTOM: 4EM -->    
+    <div class="container my-4">
+       
+       
+       <div class="row">
+          
+           <div class="col-lg-9 col-md-12">            
+             <div class="card mb-4 my-info" >
+                  <div class="card-header">My Info</div>
+                   <div class="row p-1">
+                       <div class="col-lg-4 col-md-6 my-auto center-img">
+                          <img src="images/luis-villasmil-1222180-unsplash.png" class="card-img-top rounded-circle p-4 profile-img" alt="profile avatar">
+                       </div>
+                        <div class="col-lg-4 col-md-6 my-auto">
+                            <div class="container-fluid py-3">
+                            <h5>User Profile</h5>
+                            <p class="card-text">Simple bio area for users to add a short description of themselves.</p>
+                            <h5 class="card-title">Find Me On:</h5>
+                            <p class="card-text">
+                            <span class="fa-stack fa-md my-1">
+                              <i class="fa fa-circle fa-stack-2x github"></i>
+                              <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span> 
+                            <span class="fa-stack fa-md my-1">
+                              <i class="fa fa-circle fa-stack-2x linkedin"></i>
+                              <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-md my-1">
+                              <i class="fa fa-circle fa-stack-2x twitter"></i>
+                              <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>  
+                            <span class="fa-stack fa-md my-1">
+                              <i class="fa fa-circle fa-stack-2x facebook"></i>
+                              <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-md my-1">
+                              <i class="fa fa-circle fa-stack-2x insta"></i>
+                              <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>  
+                            </div>
+                        
+                       </div>
+                    <div class="col-lg-4 col-md-12 my-auto text-center">
+                       <div class="container-fluid py-3">
+                           <a href="#" class="btn btn-red btn-styled my-2">View Resume <i class="fas fa-external-link-alt px-1"></i></a>
+                           <a href="#" class="btn btn-red btn-styled my-2">View Portfolio <i class="fas fa-external-link-alt px-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-12 text-center mb-4"> 
+            <div class="card h-100 bg-light">
+             <ul class="list-group my-auto list-group-flush">
+                <li class="list-group-item bg-light"><a href="#" class="text-black"><img src="images/Messages.png" class="mb-1"/><br>Messages</a></li>
+                <li class="list-group-item bg-light"><a href="#" class="text-black"><img src="images/Sections.png" class="mb-1"/><br>My Pages</a></li>
+                <li class="list-group-item bg-light"><a href="#" class="text-black"><img src="images/Search.png" class="mb-1"/><br>Explore</a></li>
+                <li class="list-group-item bg-light"><a href="#" class="text-black"><img src="images/Profile.png" class="mb-1"/><br>My Network</a></li>
+            </ul> 
+            </div>  
+        </div>
+    </div>
+    
+    <div class="row">
+       <div class="col-lg-9 col-md-12 mb-4">
+       
+               <div class="card" >
+                    <div class="card-header"> Posts </div>
+                    <div class="px-2">
+                        <div class="card-body">
+                            <h5 class="card-title">New post</h5>
+                            <h6 class="card-subtitle mb-2 text-muted small">12 hours ago</h6>
+                            <p class="card-text">Some quick example text for a post.</p>
+                            <hr>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">My First Post</h5>
+                            <h6 class="card-subtitle mb-2 text-muted small">1 day ago</h6>
+                            <p class="card-text">Some quick example text for a post.</p>
+                            <hr>
+
+                            <div class="p-2 text-center">
+                            <a href="#" class="btn btn-red btn-styled">Update Feed</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+		        </div>
+       
+            
+	            <div class="card mt-4">
+		            <div class="card-header">
+		                Create a Post
+		            </div>
+		            <div class="card-body">
+		                <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        </blockquote>
+                        <hr>
+                        <form>
+                            <div class="form-group pt-4">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="py-1 text-center">
+                                <button type="button" class="btn btn-red btn-styled">
+                                    Add Post
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 mb-4">
+                <div class="card updates-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Similar Profiles:</h5>
+                        <div class="py-1 similar-profiles">
+                           <i class="fas fa-chevron-left text-gray px-1"></i>
+                           <img class="similar-pro-img rounded-circle border" src="http://placekitten.com/40/40"/>
+                           <img class="similar-pro-img rounded-circle border" src="http://placekitten.com/40/40"/>
+                           <img class="similar-pro-img rounded-circle border" src="http://placekitten.com/40/40"/>
+                           <i class="fas fa-chevron-right px-1"></i>
+                            <p class="py-1"><b>John Doe</b><br>
+                            Studied at University of Central Florida...
+                            <br><a href="#">Learn More</a>
+                           </p>
+                           <hr>
+                        </div>
+                        <h5 class="card-title recent-activity">Recent Activity:</h5>
+                        <div class="py-1 recent-activity-content">
+                            <a class="text-blue" href="#">User Profile shared:</a><br>
+                            <b>"Article Title Goes Here..."</b>
+                            <div class="px-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vestibulum eu tellus eget mauris tristique laoreet. 
+                        Nunc elementum mi sit amet metus congue dignissim. 
+                                Fusce rhoncus venenatis nibh vulputate aliquet.</div>
+                        </div>
+                        <div class="py-1 recent-activity-content">
+                            <a class="text-blue" href="#">User Profile liked this</a><br>
+                            <b>"Article Title Goes Here..."</b>
+                            <div class="px-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vestibulum eu tellus eget mauris tristique laoreet. 
+                        Nunc elementum mi sit amet metus congue dignissim. 
+                                Fusce rhoncus venenatis nibh vulputate aliquet.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+       
+	
+</body>
 </html>
