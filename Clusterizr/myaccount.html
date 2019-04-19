@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
 	<link rel="stylesheet" href="styles/styles.css">
+	
+	<!--- FONT AWESOME FOR ICONS - SAMANTHA S --->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -34,16 +38,13 @@
         transition: color 0.2s linear;
         font: 30px Arial, sans-serif
     }
-
     .cssCircle:hover {
         background: black;
         cursor: pointer;
     }
-
     .plusSign {
         line-height: 1.1em;
     }
-
     .plusSign:hover {
         color: #FFC904;
     }      
@@ -65,15 +66,14 @@
     table{
         font-size: 2vw;
     }
-    .btn{
+    /*.btn{
         background-color: #F13959;
         float: right;
     }
     .btn:hover{
         background-color: black;
         color:#FFC904;
-
-    }
+    }*/
     @media only screen and (max-width: 900px){
         .profilepic{
             width: 90%;
@@ -82,15 +82,133 @@
             width: 100%;
         }
     }
+    
+    /*--- ADDED CLASSES - SAMANTHA S ---*/
+        .text-yellow {
+            color: #FFC904 !important;
+        }
+        .text-black {
+            color: black;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .text-blue {
+            color: #0066ff;
+        }
+        .text-gray {
+            color: lightgray;
+        }
+        .btn-red {
+            background: #F13959;
+            color: white;
+        }
+        .btn-red:hover {
+            color: white;
+            background: #bc2d45;
+        }
+        .btn-blue {
+            background: #0066ff;
+            color: white;
+        }
+        .btn-blue:hover {
+            background: 0050c9;
+        }
+        .btn-yellow{
+            background: #ffc904;
+            color: black;
+        }
+        .btn-yellow:hover {
+            background: #e2b204;
+        }
+        .bg-black {
+            background: #000;
+        }
+        .twitter{
+            color:#55acee;
+        }
+        .facebook {
+            color: #3b5998;
+        }
+        .insta {
+            color: #7232bd; 
+        }
+        .linkedin {
+            color: #0077b5;
+        }
+        .github {
+            color: #6e5494;
+        }
+        .btn-styled {
+            min-width: 180px;
+        }
+        .profile-img {
+            max-width: 300px;
+        }
+        .similar-pro-img {
+            padding: 0;
+            text-align: left;
+            margin: 0;
+        }
+        .list-group-select li.list-group-item:hover {
+            background: #ffc904;
+            color: black;
+        }
+    table {
+        font-size: 1.5vw;
+        margin: 0 auto;
+    }
+        
+        /*--- NAVBAR FIX? ---*/
+
+        
+        /*--- RESPONSIVENESS - SAMANTHA S ---*/
+        
+        /*Small devices (landscape phones, 576px and below)*/
+        @media all and (max-width: 576px) {
+
+            
+            .updates-card h5, .similar-profiles{
+                text-align: center!important;
+            }
+            .recent-activity-content{
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+            .my-info .btn {
+                display: block;
+            }
+
+        }
+
+        /*Medium devices (tablets, 768px and below)*/
+        @media all and (max-width: 992px) { 
+
+            .updates-card h5, .similar-profiles{
+                text-align: center!important;
+            }
+            .recent-activity-content{
+                padding-left: 2em;
+                padding-right: 2em;
+            }
+            .my-info .btn {
+                margin: 1em;
+            }
+            .center-img{
+                text-align: center!important;
+            }
+
+        }
   
-</style>
+    </style>
+</head>
 	
 	
     <title>Clusterizr</title>
 	
 	
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"></img></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -103,13 +221,15 @@
         <a class="nav-link" href="clusterizr_home.html">Home</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="messages.html">Notifications</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="mynetwork.html">My Network</a>
       </li>
-	  
-	  <li class="nav-item dropdown">
+       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="careersalary.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Career
         </a>
@@ -123,161 +243,258 @@
         <a class="nav-link" href="events.html">Events</a>
       </li>
 	  <li class="nav-item active">
-        <a class="nav-link" href="#">My Account</a>
+        <a class="nav-link" href="myaccount.html">My Account</a>
+      </li>
+      <li class="nav item">
+          <a class="nav-link" href="contact.html">Contact</a>
       </li>
     </ul>
 	  <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     </form>
-	  
-	  
+
 	  <ul class="nav justify-content-end">
       <li class="nav-item" style="float:right">
-        <a style="color:#FFC904" href="signin.html">Log Out</a>
+        <a style="color:#FFC904" href="#">Log Out</a>
       </li>
     </ul>
     
   </div>
 </nav>
-</head>
 
 <body>
-<div class="container" style="padding-top:10px">
-	<div class="col-12">
-		<div class="card ">
-		
-		<div class="card-body">
-		<img src="images/logo_black.png">	
-			
-		</div>
-	</div>
-	</div>
-	
-	<div class="col-12">
-	<div class="card">
-	<h5 class="card-header"><button class="btn">Edit</button></h5>
-	<div class="card-body">
-	
-	<div class="col-lg-4 col-sm-12 info">
-	<img class="profilepic" src="images/avatar.png"><div class="cssCircle plusSign add">
-  &#43;
-</div>
-        <br>
-	<h3> Joe Blow </h3>
-        <br>
-	<h4> Student of Web Design </h4>
-        <br>
-	<h5> joeblow@knights.ucf.edu </h5>
-	
-	<br>
+
+
+
+<!-- MAIN CONTAINER WITH MARGIN TOP AND BOTTOM: 4EM -->    
+    <div class="container my-4">
+       
+       
+       <div class="row">
+          
+           <div class="col-lg-9 col-md-12">            
+             <div class="card mb-4 my-info" >
+                  <div class="card-header">
+                      <div class="row">
+                          <div class="col-6 my-auto">
+                              My Info
+                          </div>
+                          <div class="col-6 text-right">
+                              <button type="button" class="btn btn-yellow">Edit <i class="fas fa-edit"></i></button>
+                          </div>
+                      </div>
+                  
+                  </div>
+                   <div class="row p-1">
+                       <div class="col-lg-4 col-md-6 my-auto center-img">
+                          <img src="images/luis-villasmil-1222180-unsplash.png" class="card-img-top rounded-circle p-4 profile-img" alt="profile avatar">
+                       </div>
+                        <div class="col-lg-4 col-md-6 my-auto">
+                            <div class="container-fluid py-3">
+                            <h5>User Profile</h5>
+                            <p class="card-text">Simple bio area for users to add a short description of themselves.</p>
+                            <h5 class="card-title">Find Me On:</h5>
+                            <p class="card-text">
+                            <span class="fa-stack fa-md my-1">
+                              <i class="fa fa-circle fa-stack-2x github"></i>
+                              <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span> 
+                            <span class="fa-stack fa-md my-1">
+                              <i class="fa fa-circle fa-stack-2x linkedin"></i>
+                              <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-md my-1">
+                              <i class="fa fa-circle fa-stack-2x twitter"></i>
+                              <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>  
+                            <span class="fa-stack fa-md my-1">
+                              <i class="fa fa-circle fa-stack-2x facebook"></i>
+                              <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-md my-1">
+                              <i class="fa fa-circle fa-stack-2x insta"></i>
+                              <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>  
+                            </div>
+                        
+                       </div>
+                    <div class="col-lg-4 col-md-12 my-auto text-center">
+                       <div class="container-fluid py-3">
+                           <a href="#" class="btn btn-yellow btn-styled my-2">View Resume <i class="fas fa-external-link-alt px-1"></i></a>
+                           <a href="#" class="btn btn-yellow btn-styled my-2">View Portfolio <i class="fas fa-external-link-alt px-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-8 col-sm-12 highlights">
-	<h4> Highlights </h4>
-	<div class="card-deck">
-  <div class="card">
-    <table>
-    <tr>
-    <td> &#x2b; Web Design</td>
-    <td> &#x2b; Event Planing</td>
-    </tr>
-    <tr>
-    <td> &#x2b; Digital Marketing</td>
-    <td> &#x2b; Adobe ai, ps, xd</td>
-    </tr>
-    <tr>
-    <td> &#x2b; E-Commerce</td>
-    <td> &#x2b; Web Design</td>
-    </tr>
-    <tr>
-    <td> &#x2b; Branding</td>
-    <td> &#x2b; HTML/CSS/Java/php</td>
-    </tr>
-    <tr>
-    <td> &#x2b; Social Media Marketing</td>
-    <td> &#x2b; Wix/Squarespace/Wordpress</td>
-    </tr>
-    <tr>
-    <td> &#x2b; Owns a cat</td>
-    <td> &#x2b; Group Project Expirence</td>
-    </tr>
-    <tr>
-    <td> &#x2b; Bootstrap knowledge</td>
-    <td> &#x2b; Life Lessons from my profs</td>
-    </tr>
-</table>
-
-  </div>
-  </div>
-</div>
+        <div class="col-lg-3 col-md-12 text-center mb-4"> 
+            <div class="card h-100 bg-light">
+             <ul class="list-group my-auto list-group-flush list-group-select">
+                <li class="list-group-item bg-light"><a href="#" class="text-black"><i class="fas fa-envelope text-yellow"></i><br>Message</a></li>
+                <li class="list-group-item bg-light"><a href="#" class="text-black"><i class="fas fa-list text-yellow"></i><br>View Posts</a></li>
+                <li class="list-group-item bg-light"><a href="#" class="text-black"><i class="fas fa-user-circle text-yellow"></i><br>View Network</a></li>
+                <li class="list-group-item bg-light"><a href="#" class="text-black"><i class="fas fa-search text-yellow"></i><br>Explore</a></li>
+                
+            </ul> 
+            </div>  
+        </div>
     </div>
-	</div>
-	</div>
-	
-	<div class="row">
-	<div class="col">
-	<div class="col">
-	<div class="card">
-	<h5 class="card-header">Create a Post</h5>
-	<div class="card-body">
-    <h5 class="card-title">Some Jobs</h5>
-    <textarea rows="4" cols="50">Create a Job Post...
-</textarea>
-        <button class="btn">Submit</button>
-	</div>
-	</div>
-	</div>
-	<div class="col">
-	<div class="card">
-	<h5 class="card-header">Expirience</h5>
-	<div class="card-body">
-    <h5 class="card-title">Lifeguard</h5>
-    <p class="card-text">Seaworld Lifequear 23 years</p>
-    <h5>Professor</h5><p class="card-text">Professor at UCF downtown campus ~.1 semester</p>
-
-	</div>
-	</div>
-	</div>
-	<div class="col">
-	<div class="card">
-	<h5 class="card-header">Education</h5>
-	<div class="card-body">
-    <h5 class="card-title">Some Jobs</h5>
-    <p class="card-text">University of West Florida- Bachelors of Graphic Design 2015</p>
-	</div>
-	</div>
-	</div>
-	</div>
-	
-	<div class="col">
-	<div class="col">
-	<div class="card">
-	<h5 class="card-header">My Applications</h5>
-	<div class="card-body">
-	<ul class="list-group list-group-flush">
-		<li class="list-group-item" >
-		<img src="images/logo_black.png" width="12%"></img>
-		<b>Coffee Intern</b>  <p>We just want someone to walk to starbucks, we pay in expirience </p>
-		<div><button class="btn">View Job</button>
-		<input type="checkbox" aria-label="Checkbox for following text input"> Accepted
-		<input type="checkbox" aria-label="Checkbox for following text input"> Denied</div>
-		</li>
-		<li class="list-group-item" >
-		<img src="images/logo_black.png" width="12%"></img>
-		<b>Web Designer Needed</b>  <p>Someone please come fix our wordpress. We pay in expirience</p>
-		<div><button class="btn">View Job</button>
-		<input type="checkbox" aria-label="Checkbox for following text input"> Accepted
-		<input type="checkbox" aria-label="Checkbox for following text input"> Denied</div>
-		</li>
-		
-	</ul>
-	</div>
+    
+    <div class="row">
+       <div class="col-lg-9 col-md-12 mb-4">
+               
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                          <div class="col-6 my-auto">
+                              Highlights
+                          </div>
+                          <div class="col-6 text-right">
+                              <button type="button" class="btn btn-yellow">Edit <i class="fas fa-edit"></i></button>
+                          </div>
+                      </div>
+                </div>
+                    <div class="px-2">
+                        <div class="card-body">
+                            <table>
+                            <tr>
+                            <td> &#x2b; Web Design</td>
+                            <td> &#x2b; Event Planing</td>
+                            </tr>
+                            <tr>
+                            <td> &#x2b; Digital Marketing</td>
+                            <td> &#x2b; Adobe ai, ps, xd</td>
+                            </tr>
+                            <tr>
+                            <td> &#x2b; E-Commerce</td>
+                            <td> &#x2b; Web Design</td>
+                            </tr>
+                            <tr>
+                            <td> &#x2b; Branding</td>
+                            <td> &#x2b; HTML/CSS/Java/php</td>
+                            </tr>
+                            <tr>
+                            <td> &#x2b; Social Media Marketing</td>
+                            <td> &#x2b; Wix/Squarespace/Wordpress</td>
+                            </tr>
+                            <tr>
+                            <td> &#x2b; Owns a cat</td>
+                            <td> &#x2b; Group Project Expirence</td>
+                            </tr>
+                            <tr>
+                            <td> &#x2b; Bootstrap knowledge</td>
+                            <td> &#x2b; Life Lessons from my profs</td>
+                            </tr>
+                        </table>
+                            
+                        </div>
+                    </div>
+            </div>
+       
+               <div class="card mt-4" >
+                    <div class="card-header">
+                        <div class="row">
+                          <div class="col-6 my-auto">
+                              My Info
+                          </div>
+                          <div class="col-6 text-right">
+                              <button type="button" class="btn btn-yellow">Edit <i class="fas fa-edit"></i></button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="card-body">
+                            <h5 class="card-title">University</h5>
+                            <p class="card-text">University of West Florida- Bachelors of Graphic Design 2015.</p>
+                        </div>
+                    </div>
+                    
+		        </div>
+		        
+		        <div class="card mt-4" >
+                    <div class="card-header">
+                        <div class="row">
+                          <div class="col-6 my-auto">
+                              Experience
+                          </div>
+                          <div class="col-6 text-right">
+                              <button type="button" class="btn btn-yellow">Edit <i class="fas fa-edit"></i></button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Lifeguard</h5>
+                            <p class="card-text">Lifeguard Seaworld Lifequear 23 years</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Professor</h5>
+                            <p class="card-text">Professor at UCF downtown campus ~.1 semester</p>
+                        </div>
+                    </div>
+                    
+		        </div>
+       
+            
+	            <div class="card mt-4">
+		            <div class="card-header">
+		                Create a Post
+		            </div>
+		            <div class="card-body">
+		                
+                        
+                        <form>
+                            <div class="form-group pt-4">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="py-1 text-center">
+                                <button type="button" class="btn btn-yellow btn-styled">
+                                    Add Post
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 mb-4">
+                <div class="card updates-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Similar Profiles:</h5>
+                        <div class="py-1 similar-profiles">
+                           <i class="fas fa-chevron-left text-gray px-1"></i>
+                           <img class="similar-pro-img rounded-circle border" src="http://placekitten.com/40/40"/>
+                           <img class="similar-pro-img rounded-circle border" src="http://placekitten.com/40/40"/>
+                           <img class="similar-pro-img rounded-circle border" src="http://placekitten.com/40/40"/>
+                           <i class="fas fa-chevron-right px-1"></i>
+                            <p class="py-1"><b>John Doe</b><br>
+                            Studied at University of Central Florida...
+                            <br><a href="#">Learn More</a>
+                           </p>
+                           <hr>
+                        </div>
+                        <h5 class="card-title recent-activity">Recent Activity:</h5>
+                        <div class="py-1 recent-activity-content">
+                            <a class="text-blue" href="#">User Profile shared:</a><br>
+                            <b>"Article Title Goes Here..."</b>
+                            <div class="px-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vestibulum eu tellus eget mauris tristique laoreet. 
+                        Nunc elementum mi sit amet metus congue dignissim. 
+                                Fusce rhoncus venenatis nibh vulputate aliquet.</div>
+                        </div>
+                        <div class="py-1 recent-activity-content">
+                            <a class="text-blue" href="#">User Profile liked this</a><br>
+                            <b>"Article Title Goes Here..."</b>
+                            <div class="px-1 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vestibulum eu tellus eget mauris tristique laoreet. 
+                        Nunc elementum mi sit amet metus congue dignissim. 
+                                Fusce rhoncus venenatis nibh vulputate aliquet.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
     </div>
-	</div>
-	</div>
-	</div>
 
 
-
-</div>
 </body>
 </html>
