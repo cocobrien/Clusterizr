@@ -1,3 +1,12 @@
+<!--- Edited 4/19/2019 by Samantha S, worked on by Steve P
+-Added newest bootstrap stylesheet,
+-Added font awesome for check mark on interested button
+-Updated nav links to include contact and about pages,
+-Fixed alignment issues with rows and columns, changed card title to h4, changed button colors, got rid of border around inner div in discover events section & centered.
+-Added y padding to 2nd and 3rd images in events sections to keep it cohesive with the 1st.
+-Fixed widths in eventpage pages.
+--->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,10 +14,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Bootstrap CSS  UPDATED TO NEWEST VERSION - SAMANTHA S -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
 	<link rel="stylesheet" href="styles/styles.css">
+	
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -17,14 +30,13 @@
 	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <style>
     .searchevent{
-        width: 80%;
+        margin: 0 auto;
+        max-width: 85%;
+    }
+    /*.discover{
         position: relative;
         float: right;
-    }
-    .discover{
-        position: relative;
-        float: right;
-    }
+    }*/
     .ubtt{
         
     }
@@ -44,16 +56,16 @@
         position: relative;
         width: 100%;
     }
-    .btn{
+    /*.btn{
         background-color: #F13959;
     }
     .btn:hover{
         background-color: black;
         color:#FFC904;
-    }
+    }*/
     @media only screen and (max-width: 600px) {
         .searchevent{
-            
+            margin:0 auto;
         }
         .discover{
             padding: none;
@@ -76,14 +88,54 @@
             margin-bottom: 200px;
         }
     }
+    
+    
+    
+    /*--- ADDED CLASSES BY SAMANTHA S ---*/
+        .btn-red {
+            background: #F13959;
+            color: white;
+        }
+        .btn-red:hover {
+            color: white;
+            background: #bc2d45;
+        }
+        .btn-yellow{
+            background: #ffc904;
+            color: black;
+        }
+        .btn-yellow:hover {
+            background: #e2b204;
+        }
+        .white-text {
+            color: #fff;
+        }
+        .btn-styled {
+            min-width: 180px;
+        }
+        .profile-img {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        .profile-img-smaller {
+            max-width: 120px;
+            margin: 0 auto;
+        }
+    .btn-blue {
+            background: #0066ff;
+            color: white;
+        }
+        .btn-blue:hover {
+            background: 0050c9;
+        }
 </style>
 	
 	
     <title>Clusterizr</title>
-	
+    </head>
 	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"></img></a>
+  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -94,6 +146,9 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="clusterizr_home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="messages.html">Notifications</a>
@@ -110,124 +165,139 @@
           <a class="dropdown-item" href="careerjobs.html">Career - Jobs</a>
         </div>
       </li>
+	  
 	  <li class="nav-item active">
-        <a class="nav-link" href="#">Events</a>
+        <a class="nav-link" href="events.html">Events</a>
       </li>
 	  <li class="nav-item">
         <a class="nav-link" href="myaccount.html">My Account</a>
+      </li>
+      <li class="nav item">
+          <a class="nav-link" href="contact.html">Contact</a>
       </li>
     </ul>
 	  <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     </form>
-	  
-	  
+
 	  <ul class="nav justify-content-end">
       <li class="nav-item" style="float:right">
-        <a style="color:#FFC904" href="signin.html">Log Out</a>
+        <a style="color:#FFC904" href="#">Log Out</a>
       </li>
     </ul>
     
   </div>
 </nav>
-</head>
 
 <body>
-<div class="container" style="padding-top:10px;">
 
-<div class="col-lg-4 col-md-4 calendar">
-<div class="row" style="padding-top:20px;">
-	<div class="col-lg-12 col-md-12">
-	<h5>Calendar</h5>
-	<div class="card mb-3">
-	<iframe src="https://calendar.google.com/calendar/embed?showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n3v85i9d7uafg2v8a40j0gdql4%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FChicago" style="border-width:0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
-	</div>
-	</div>
-    </div>
-    </div>
-<div class="col-md-8 col-sm-12 discover">
-	            <h5>Discover Events</h5>	
-    <div class="card">
-
-		<div class="card-body">
-			<div class="card searchevent text-center">
-			<div class="row">
-			<div class="col-lg-5 col-md-12 ubtt">
-			<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Events" aria-label="Search">
-			</form>
-			</div>
-			<div class="col-lg-5 col-md-12 ubtt">
-			<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Location" aria-label="Search">
-			</form>
-			</div>
-			<div class="col-lg-2 col-md-2 ubtt">
-			<button class="btn">Search</button>
-			</div>
-			</div>
-		</div>
-		</div>
-	</div>
-	</div>    
-    <div class="container col-md-8 col-sm-12 events">
-    <div class="row" style="padding:20px;">
-	<h5> Type of Events </h5>
-	<div class="dropdown" style="margin-left:10px;">
-	<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Select Category
-	</button>
-	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Networking</a>
-    <a class="dropdown-item" href="#">Workshops</a>
-    <a class="dropdown-item" href="#">Guest Speakers</a>
-	<a class="dropdown-item" href="#">Career Fairs</a>
-	<a class="dropdown-item" href="#">Other</a>
-	</div>
-	</div>
-	</div>
-	
-	<div class="col-12 eventcard" style="padding:none;">
-	<div class="card">
-	  <div class="card-header">
-	  Events</div>               
-	<div class="card-body">
+<div class="container my-4">
     
     
-	<ul class="list-group list-group-flush">
-  
-    <li class="list-group-item">
-	
-	<img id="eventimg" src="https://embed.widencdn.net/img/visitorlando/uekppaql7r/800x600px/178387_bowling1.jpeg?position=c&crop=no&color=ffffff&quality=100&u=er4pqc">
-        <h5>Bowling with Zuckerberg</h5> <p> May 09, 2019 </p> <p> The Bowling Alley </p>
-		<div style="float: right"><a href="eventpage.html"><button class="btn">View Event</button></a>
-	<button class="btn">Interested</button></div>
-	</li>
-	
-    <li class="list-group-item">
-	<img id="eventimg" src="https://www.socoolevents.com/storage/app/media/locations/sc-location-orlando.jpg">
-	<h5>Wheel and Deal</h5> <p> May 15, 2019 </p> <p> Orlando Fair grounds </p>
-	<div style="float: right"><a href="eventpage2.html"><button class="btn ">View Event</button></a>
-	<button class="btn">Interested</button></div>
-	</li>
-	
-    <li class="list-group-item">
-	<img id="eventimg" src="https://media2.fdncms.com/orlando/imager/u/original/14972038/1000w_player1_ricky_brigante_outsidethemagic-com.jpg">
-	<h5>Playing with Players</h5> <p> June 14, 2019 </p> <p> Player One I-drive </p>
-	<div style="float: right"><a href="eventpage3.html"><button class="btn">View Event</button></a>
-	<button class="btn">Interested</button></div>
-	</li>
-	
-	
-	</ul>
-	</div>
-	</div>
-	
+    <div class="row">
+       
+        <div class="col-lg-4 col-md-12 mb-4">
+        <h4>Calendar</h4>
+        <div class="card">
+        <div class="text-center">
+            <iframe src="https://calendar.google.com/calendar/embed?showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n3v85i9d7uafg2v8a40j0gdql4%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FChicago" style="border-width:0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
+        </div>
+        </div>
+        </div>
+        
+        <div class="col-lg-8 col-md-12 discover">
+           <div class="row">
+               <div class="col-12">
+                   <h4>Discover Events</h4>	
+                    <div class="card">
+                    <div class="card-body text-center">
+                        <div class="card searchevent text-center border-0">
+                        <div class="row">
+                        <div class="col-lg-5 col-md-12 ubtt">
+                        <form class="form-inline my-2 my-lg-0 justify-content-center">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Events" aria-label="Search">
+                        </form>
+                        </div>
+                        <div class="col-lg-5 col-md-12 ubtt">
+                        <form class="form-inline my-2 my-lg-0 justify-content-center">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Location" aria-label="Search">
+                        </form>
+                        </div>
+                        <div class="col-lg-2 col-md-12">
+                        <button class="btn btn-blue">Search </button>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-12 events my-4">
+                   
+                    <h4> Type of Events </h4>
+                    <div class="text-center">
+                       <div class="dropdown" style="margin-left:10px;">
+                        <button class="btn btn-yellow dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Category
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Networking</a>
+                        <a class="dropdown-item" href="#">Workshops</a>
+                        <a class="dropdown-item" href="#">Guest Speakers</a>
+                        <a class="dropdown-item" href="#">Career Fairs</a>
+                        <a class="dropdown-item" href="#">Other</a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="col-12 eventcard" style="padding:none;">
+                    <div class="card">
+                      <div class="card-header">
+                      Events</div>               
+                    <div class="card-body">
 
 
+                    <ul class="list-group list-group-flush">
 
-</div>
-</div>
+                    <li class="list-group-item">
+
+                    <img id="eventimg" src="https://embed.widencdn.net/img/visitorlando/uekppaql7r/800x600px/178387_bowling1.jpeg?position=c&crop=no&color=ffffff&quality=100&u=er4pqc">
+                        <h5>Bowling with Zuckerberg</h5> 
+                        <p> May 09, 2019 </p>
+                        <p> The Bowling Alley </p>
+                        <div style="float: right"><a href="eventpage.html"><button class="btn btn-yellow">View Event</button></a>
+                    <button class="btn btn-yellow">Interested <i class="fas fa-check"></i></button></div>
+                    </li>
+
+                    <li class="list-group-item">
+                    <img id="eventimg" class="py-3" src="https://www.socoolevents.com/storage/app/media/locations/sc-location-orlando.jpg">
+                    <h5>Wheel and Deal</h5> <p> May 15, 2019 </p> <p> Orlando Fair grounds </p>
+                    <div style="float: right"><a href="eventpage2.html"><button class="btn btn-yellow">View Event</button></a>
+                    <button class="btn btn-yellow">Interested <i class="fas fa-check"></i></button></div>
+                    </li>
+
+                    <li class="list-group-item">
+                    <img id="eventimg" class="py-3" src="https://media2.fdncms.com/orlando/imager/u/original/14972038/1000w_player1_ricky_brigante_outsidethemagic-com.jpg">
+                    <h5>Playing with Players</h5> <p> June 14, 2019 </p> <p> Player One I-drive </p>
+                    <div style="float: right"><a href="eventpage3.html"><button class="btn btn-yellow">View Event</button></a>
+                    <button class="btn btn-yellow">Interested <i class="fas fa-check"></i></button></div>
+                    </li>
+
+
+                    </ul>
+                    </div>
+                    </div>
+                    
+                </div>
+           </div>
+            
+        </div>
+        
+        
+    </div>    
+        
 
 </div>
 
