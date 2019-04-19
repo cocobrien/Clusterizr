@@ -1,3 +1,10 @@
+<!--- Edited 4/19/2019 by Samantha S, worked on by Yue Z
+-Added newest bootstrap stylesheet,
+-updated nav links to include contact and about pages,
+-fixed alignment issues with search and added responsiveness and padding in the yellow wrap and search area, didn't have time to correct responsiveness in the area below,
+-changed border color of card divs to match other pages.
+--->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,6 +15,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
 	<link rel="stylesheet" href="styles/styles.css">
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -15,14 +23,142 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	
 	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!--- stylesheet made by yue z, added inline, deleted external stylesheet.-->
+	<style>
+        #wrap {
+        background-color: white;
+        margin:0;
+        padding:0;
+        }
+        #card1{
+            background-color: #FFC904;
+            background:rgba(0,0,0,0.2);
+            width:60%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #cont{
+            padding-top: 90px;
+            padding-bottom: 80px;
+            padding-left:0;
+            padding-right:0;
+            margin:0;
+            background-color: #FFC904;
+        }
+        #jobcard{
+            margin:0;
+            padding:0;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #jobcardsmall{
+            height:330px;
+            background-color:#F3F3F3;
+            margin-right:20px;
+            padding:0;
+        }
+        div.hover :hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #jobcardsmall:last-child {
+            margin:0;
+        }
+        #smalltitle{
+            padding:50px;
+            color:white;
+            text-align: center;	
+            background-image: url("../images/job.jpg");
+            height: 40%; /*full height*/
+            background-position: center; /*these 3 centers and scales the image*/
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #cardtext{
+            padding:15px;
+            color: #525252;
+        }
+        .container{
+        }
+        .nav>li>a {
+            color: #FFC904;
+        }
+        /*.btn{
+            color: white;
+            background-color: #F13959;
+        }*/
+        .btn-outline-warning{
+            color: #EF8EA7;
+        }  
+        
+        /*--- ADDED CLASSES BY SAMANTHA S ---*/
+        .btn-red {
+            background: #F13959;
+            color: white;
+        }
+        .btn-red:hover {
+            color: white;
+            background: #bc2d45;
+        }
+        .btn-yellow{
+            background: #ffc904;
+            color: black;
+        }
+        .btn-yellow:hover {
+            background: #e2b204;
+        }
+        .btn-blue {
+            background: #0066ff;
+            color: #fff;
+        }
+        .btn-blue:hover {
+            background: #0050c9;
+            color: #fff;
+        }
+        .white-text {
+            color: #fff;
+        }
+        .btn-styled {
+            min-width: 180px;
+        }
+        .profile-img {
+            max-width: 300px;
+        }
+        /*--- RESPONSIVENESS - SAMANTHA S ---*/
+        
+        /*Small devices (landscape phones, 576px and below)*/
+        @media all and (max-width: 576px) {
+            #card1 {
+                width:100%;
+            }
+            .form-container {
+                text-align: center;
+                padding: none;
+                
+            }
+            
 
-	
+        }
+
+        /*Medium devices (tablets, 768px and below)*/
+        @media all and (max-width: 992px) { 
+            #card1 {
+                width:80%;
+            }
+            .form-container {
+                text-align: center;   
+            }
+        }
+    </style>
 	
     <title>Clusterizr</title>
 	
 	
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"></img></a>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -33,6 +169,9 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="clusterizr_home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="messages.html">Notifications</a>
@@ -56,79 +195,201 @@
 	  <li class="nav-item">
         <a class="nav-link" href="myaccount.html">My Account</a>
       </li>
+      <li class="nav item">
+          <a class="nav-link" href="contact.html">Contact</a>
+      </li>
     </ul>
 	  <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     </form>
-	  
-	  
+
 	  <ul class="nav justify-content-end">
       <li class="nav-item" style="float:right">
         <a style="color:#FFC904" href="#">Log Out</a>
       </li>
     </ul>
-    
-  </div>
-</nav>
-</head>
 
-<body>
-<div class="container" style="padding-top:10px">
+  </div>
+</nav>		
+
+<div class="col-12" id="wrap">
+	
+	<div id="cont" class="col-12">
 	<div class="col-12">
-		<div class="card">
+		<div id="card1" class="card">
 		<div class="card-body">
-		<h5 class="card-title">Salary</h5>
-			<p> Enter Search Criteria </p>
-			<div class="card text-center">
-			<div class="row">
-			<div class="col-5">
-			<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Job Title" aria-label="Search">
-			</form>
+		<div class="card-title text-center white-text"><h3>Salary</h3></div>
+			<div class="card text-center px-3 bg-transparent border-0">
+			<div class="container px-3 form-container">
+			    <div class="row text-center">
+                <div class="col-lg-5 col-md-12 my-auto">
+                <form class="form-inline my-2 my-lg-0 justify-content-center">
+                <input class="form-control mr-sm-2" type="search" placeholder="Job Title" aria-label="Search">
+                </form>
+                </div>
+                <div class="col-lg-5 col-md-12 my-auto form-center">
+                <form class="form-inline my-2 my-lg-0 justify-content-center">
+                <input class="form-control mr-sm-2" type="search" placeholder="Location" aria-label="Search">
+                </form>
+                </div>
+                <div class="col-lg-2 col-md-12 my-auto form-center">
+                <button class="btn btn-blue btn-search my-2">Search</button>
+                </div>
+                </div>
 			</div>
-			<div class="col-5">
-			<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Location" aria-label="Search">
-			</form>
-			</div>
-			<div class="col-2">
-			<button class="btn btn-warning">Search</button>
-			</div>
-			</div>
+			
 		</div>
 		</div>
 	</div>
 	</div>
+	</div>
+	
+	<br>
+	<br>
+	
+<div class="container">
 	<div class="col-12">
-	<div class="card border-warning">
+	<div class="card">
 	<h5 class="card-header">Popular Jobs</h5>
 	<div class="card-body">
-    <h5 class="card-title">Some Jobs</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		
+	<div class="row" id="jobcard">
+
+		<div id="jobcardsmall" class="col">		
+			<div class="hover">
+				<a href="#" target=”_blank”>
+    		 	<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+   			<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		</div>
+
+		<div id="jobcardsmall" class="col">
+			<div class="hover">
+    	 		<a href="#" target=”_blank”>
+    	 		<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+			<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		</div>
+		<div id="jobcardsmall" class="col">
+			<div class="hover">
+				<a href="#" target=”_blank”>
+    	 		<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+   			<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		</div>
+		<div id="jobcardsmall" class="col">
+   			<div class="hover">
+				<a href="#" target=”_blank”>
+    	 		<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+    		<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  		</div>
+		</div>
 	</div>
 	</div>
 	</div>
+	
+		
+	<br>
+		
 	<div class="col-12">
-	<div class="card border-warning">
+	<div class="card">
 	<h5 class="card-header">Highest Paying Jobs</h5>
 	<div class="card-body">
-    <h5 class="card-title">Some Jobs</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    	<div class="row" id="jobcard">
+
+		<div id="jobcardsmall" class="col">		
+			<div class="hover">
+				<a href="#" target=”_blank”>
+    		 	<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+   			<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		</div>
+
+		<div id="jobcardsmall" class="col">
+			<div class="hover">
+    	 		<a href="#" target=”_blank”>
+    	 		<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+			<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		</div>
+		<div id="jobcardsmall" class="col">
+			<div class="hover">
+				<a href="#" target=”_blank”>
+    	 		<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+   			<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		</div>
+		<div id="jobcardsmall" class="col">
+   			<div class="hover">
+				<a href="#" target=”_blank”>
+    	 		<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+    		<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  		</div>
+		</div>
 	</div>
 	</div>
 	</div>
+		
+	<br>
+		
 	<div class="col-12">
-	<div class="card border-warning">
+	<div class="card">
 	<h5 class="card-header">Top Positions</h5>
 	<div class="card-body">
-    <h5 class="card-title">Some Jobs</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    	<div class="row" id="jobcard">
+
+		<div id="jobcardsmall" class="col">		
+			<div class="hover">
+				<a href="#" target=”_blank”>
+    		 	<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+   			<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		</div>
+
+		<div id="jobcardsmall" class="col">
+			<div class="hover">
+    	 		<a href="#" target=”_blank”>
+    	 		<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+			<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		</div>
+		<div id="jobcardsmall" class="col">
+			<div class="hover">
+				<a href="#" target=”_blank”>
+    	 		<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+   			<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		</div>
+		<div id="jobcardsmall" class="col">
+   			<div class="hover">
+				<a href="#" target=”_blank”>
+    	 		<h5 id="smalltitle" class="card-title">Some Jobs</h5>
+				</a>
+			</div>
+    		<p id="cardtext" class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  		</div>
+		
 	</div>
 	</div>
 	</div>
+		</div>
 
-
-
+	</div>
 </div>
 </body>
 </html>
+
+
