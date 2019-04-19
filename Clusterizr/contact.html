@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Clusterizr</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+   
+   
+    <style>
+        /*--- ADDED CLASSES - SAMANTHA S ---*/
+        .text-yellow {
+            color: #FFC904;
+        }
+        .text-black {
+            color: black;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .text-blue {
+            color: #0066ff;
+        }
+        .text-gray {
+            color: lightgray;
+        }
+        .btn-red {
+            background: #F13959;
+            color: white;
+        }
+        .btn-red:hover {
+            color: white;
+            background: #bc2d45;
+        }
+        .btn-yellow{
+            background: #ffc904;
+            color: black;
+        }
+        .btn-yellow:hover {
+            background: #e2b204;
+        }
+        .bg-black {
+            background: #000;
+        }
+        .twitter{
+            color:#55acee;
+        }
+        .facebook {
+            color: #3b5998;
+        }
+        .insta {
+            color: #7232bd; 
+        }
+        .linkedin {
+            color: #0077b5;
+        }
+        .github {
+            color: #6e5494;
+        }
+        .btn-styled {
+            min-width: 180px;
+        }
+        .profile-img {
+            max-width: 300px;
+        }
+        .similar-pro-img {
+            padding: 0;
+            text-align: left;
+            margin: 0;
+        }
+        .smaller-div {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .form-container{
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        /* code from sign up page to keep cohesiveness between form stylings */
+        .input-group-prepend span{
+        width: 50px;
+        background-color: none;
+        color: black;
+        border:0 !important;
+        }
+        input:focus{
+        outline: 0 0 0 0  !important;
+        box-shadow: 0 0 0 0 !important;
+        }
+        
+        /*--- RESPONSIVENESS - SAMANTHA S ---*/
+        
+        /*Small devices (landscape phones, 576px and below)*/
+        @media all and (max-width: 576px) {
+
+
+        }
+
+        /*Medium devices (tablets, 768px and below)*/
+        @media all and (max-width: 992px) { 
+
+            .form-container {
+                padding: 1em;
+            }
+
+        }
+        
+    </style>
+</head>
+	
+	
+    
+<header>	
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+	
+	
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="clusterizr_home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="messages.html">Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mynetwork.html">My Network</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="careersalary.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Career
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="careersalary.html">Career - Salaries</a>
+              <a class="dropdown-item" href="careerjobs.html">Career - Jobs</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myaccount.html">My Account</a>
+          </li>
+          <li class="nav item active">
+              <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+          <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+
+
+          <ul class="nav justify-content-end">
+          <li class="nav-item" style="float:right">
+            <a style="color:#FFC904" href="signin.html">Log Out</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+</header>
+  
+<body>
+   
+    <!-- MAIN CONTAINER WITH MARGIN TOP AND BOTTOM: 4EM -->    
+    <div class="container my-4">
+        <div class="justify-content-center h-100">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card smaller-div">
+                       <div class="card-header h3">Contact Us</div>
+                       <div class="card-body p-3">
+                        <div class="form-container text-center">
+                          <div class="my-4">
+                              <h5>Please fill out the information below.</h5>
+                              <p class="text-muted">We will get back to you as soon as possible.</p>
+                          </div>
+                           
+                           
+                          <div class="form-group">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                             <option value="" selected disabled>Reason for Contacting Us</option>
+                              <option>Technical Issues</option>
+                              <option>Career Oppurtunity</option>
+                              <option>Other</option>
+                            </select>
+                          </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Your Name...">
+                            
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Your Email...">
+                            
+                            </div>
+                            <div class="form-group">
+                            <textarea class="form-control" name="textarea" id="content_section" rows="3" placeholder="Your Message..."></textarea>
+                           </div>
+
+                            <button type="submit" class="btn btn-red mybtn">Send Message <i class="fas fa-paper-plane"></i></button>
+                            
+                        </div>
+                         
+
+                       </div>
+                       <div class="card-footer text-center">
+                           <h5 class="my-4">Knight Konnect</h5>
+                           <p>Phone: (407) 461-8347</p>
+                           <p>E-mail: knightkonnect@knights.ucf.edu</p>
+                       </div>
+                   </div>
+                
+                  
+                </div>
+            </div>
+           
+        </div>
+      
+      
+  </div>
+  
+ 
+
+ 
+  
+</body>
+</html>
