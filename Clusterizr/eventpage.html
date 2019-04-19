@@ -1,4 +1,4 @@
-​<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -8,18 +8,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
 	<link rel="stylesheet" href="styles/styles.css">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><i class="fas fa-check"></i>
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	
 	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<style>
+    <style>
       .interest{
             float: right;
         }
-    .btn{
+    /*.btn{
         background-color: #F13959;
     }
     .btn:hover{
@@ -37,28 +40,77 @@
             text-decoration: none;
             color: #FFC904;
         }
-        a{
+        a {
             color: #F13959;
         }
         a:hover{
             color: #FFC904;
-        }
+        }*/
         @media only screen and (max-width: 900px) {
             .interest{
                 float: none;
+                
             }
             img{
                 width: 100%;
             }
+            .max-width-lg {
+            padding: .3em;
+            margin: 0 auto;
+            }
         }
-      </style>
+        
+        @media only screen and (max-width: 700px) {
+            .max-width-lg {
+            padding: 1em;
+            margin: 0 auto;
+            }
+        }
+    
+    /*--- ADDED CLASSES BY SAMANTHA S ---*/
+        .btn-red {
+            background: #F13959;
+            color: white;
+        }
+        .btn-red:hover {
+            color: white;
+            background: #bc2d45;
+        }
+        .btn-yellow{
+            background: #ffc904;
+            color: black;
+        }
+        .btn-yellow:hover {
+            background: #e2b204;
+        }
+        .white-text {
+            color: #fff;
+        }
+        .btn-styled {
+            min-width: 180px;
+        }
+        .profile-img {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        .profile-img-smaller {
+            max-width: 120px;
+            margin: 0 auto;
+        }
+        .max-width-lg {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    
+    
+    </style>
 	
 	
     <title>Clusterizr</title>
-	
+    </head>
 	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"></img></a>
+  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -69,6 +121,9 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="clusterizr_home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="messages.html">Notifications</a>
@@ -85,38 +140,44 @@
           <a class="dropdown-item" href="careerjobs.html">Career - Jobs</a>
         </div>
       </li>
+	  
 	  <li class="nav-item active">
         <a class="nav-link" href="events.html">Events</a>
       </li>
 	  <li class="nav-item">
         <a class="nav-link" href="myaccount.html">My Account</a>
       </li>
+      <li class="nav item">
+          <a class="nav-link" href="contact.html">Contact</a>
+      </li>
     </ul>
 	  <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     </form>
-	  
-	  
+
 	  <ul class="nav justify-content-end">
       <li class="nav-item" style="float:right">
-        <a style="color:#FFC904" href="signin.html">Log Out</a>
+        <a style="color:#FFC904" href="#">Log Out</a>
       </li>
     </ul>
     
   </div>
 </nav>
-</head>
+
 <body>
-	<div class="container">
-<div class="row" style="padding-top:20px;">
-	<button style="margin-bottom:10px;" class="btn"><a href="events.html">&#x2190; Back to Events</a></button>
+	<div class="container my-4">
+    
+	<a href="events.html"><button type="button" class="btn btn-yellow mb-4">&#x2190; Back to Events</button></a>
+	
+	<div class="row max-width-lg">
 	<div class="col-12">
 	<div class="card">
 	  <div class="card-header">
 	  Events</div>
 	<div class="card-body">
     
-    <button class="interest btn" ><a href="events.html">Interested in Event</a></button>
+        <a href="events.html"><button type="button" class="interest btn btn-yellow mb-4">Interested <i class="fas fa-check"></i></button></a>
+    
 	<ul class="list-group list-group-flush">
     
     <li class="list-group-item">
