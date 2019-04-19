@@ -1,3 +1,12 @@
+<!--- Edited 4/19/2019 by Samantha S, worked on by Yue Z ---*/
+-Added newest bootstrap stylesheet,
+-updated nav links to include contact and about pages,
+-changed the button colors, and button hover colors,
+-fixed some resizing issues with images, and added new images to the suggestions section.
+-fixed responsiveness issues with all of the cards, and search area.
+-changed border color to match other pages.
+--->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,9 +14,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+     <!-- Bootstrap CSS - UPDATED TO NEWEST VERSION - SAMANTHA S -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
 	<link rel="stylesheet" href="styles/styles.css">
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -17,12 +27,126 @@
 	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	
+
+	<style>
+        #home {
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-right: 5px;
+        }
+        #wrap {
+            background-color: white;
+            margin:0;
+            padding:0;
+            padding-bottom:40px;
+        }
+        #smallcard{
+            background-color: #FFC904;
+        }
+        #searchrow{
+            width:60%;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: #FFC904;
+            background:rgba(0,0,0,0.2);
+            padding: 40px;
+        }
+        #careerhelp{
+            color:white;
+            font-size: 35px;
+            text-align: center;
+            padding-top:40px; 
+            padding-bottom:20px;
+        }
+        .card-deck{
+            width:95%;
+            margin-left:auto;
+            margin-right:auto;
+            padding-top:20px;
+            padding-bottom:50px;
+        }
+        .container{
+        }
+        .nav>li>a {
+            color: #FFC904;
+        }
+        .btn-outline-warning{
+            color: #EF8EA7;
+        }
+        
+        /*--- ADDED CLASSES BY SAMANTHA S ---*/
+        .btn-red {
+            background: #F13959;
+            color: white;
+        }
+        .btn-red:hover {
+            color: white;
+            background: #bc2d45;
+        }
+        .btn-blue {
+            background: #0066ff;
+            color: #fff;
+        }
+        .btn-blue:hover {
+            background: #0050c9;
+            color: #fff;
+        }
+        .btn-yellow{
+            background: #ffc904;
+            color: black;
+        }
+        .btn-yellow:hover {
+            background: #e2b204;
+        }
+        .white-text {
+            color: #fff;
+        }
+        .btn-styled {
+            min-width: 180px;
+        }
+        .profile-img {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        .profile-img-smaller {
+            max-width: 120px;
+            margin: 0 auto;
+        }
+        .job-card img{
+            max-width: 100px;
+        }
+        
+        /*--- RESPONSIVENESS - SAMANTHA S ---*/
+        
+        /*Small devices (landscape phones, 576px and below)*/
+        @media all and (max-width: 576px) {
+            #card1 {
+                width:100%;
+            }
+            .form-container {
+                text-align: center;
+                padding: none;
+            }
+        }
+
+        /*Medium devices (tablets, 768px and below)*/
+        @media all and (max-width: 992px) { 
+            #card1 {
+                width:80%;
+            }
+            .form-container {
+                text-align: center;   
+            }
+        }
+    </style>
 	
     <title>Clusterizr</title>
+</head>
+
+<body>
 	
-	
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"></img></a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -35,13 +159,15 @@
         <a class="nav-link" href="clusterizr_home.html">Home</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="messages.html">Notifications</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="mynetwork.html">My Network</a>
       </li>
-	  
-	  <li class="nav-item dropdown active">
+       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="careersalary.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Career
         </a>
@@ -57,12 +183,14 @@
 	  <li class="nav-item">
         <a class="nav-link" href="myaccount.html">My Account</a>
       </li>
+      <li class="nav item">
+          <a class="nav-link" href="contact.html">Contact</a>
+      </li>
     </ul>
 	  <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     </form>
-	  
-	  
+
 	  <ul class="nav justify-content-end">
       <li class="nav-item" style="float:right">
         <a style="color:#FFC904" href="#">Log Out</a>
@@ -71,140 +199,157 @@
     
   </div>
 </nav>
-</head>
 
-<body>
-<div class="container" style="padding-top:10px">
-	<div class="col-12">
+	
+<div class="col-12" id="wrap">
 		<div class="card border-warning">
-		<div class="card-body">
-		<h5 class="card-title">Career Help</h5>
-			<p> Job Search </p>
+		<div id="smallcard" class="card-body">
+		<h4 class="card-title" id="careerhelp">Career Help</h4>
 			
-			<div class="row">
-			<div class="col-5">
-			<form class="form-inline my-2 my-lg-0">
+			<div id= "searchrow" class="row text-center form-container">
+			<div class="col-lg-5 col-md-12 my-auto">
+			<form class="form-inline my-2 my-lg-0 justify-content-center">
 			<input class="form-control mr-sm-2" type="search" placeholder="Search Jobs" aria-label="Search">
 			</form>
 			</div>
-			<div class="col-5">
-			<form class="form-inline my-2 my-lg-0">
+			<div class="col-lg-5 col-md-12 my-auto">
+			<form class="form-inline my-2 my-lg-0 justify-content-center">
 			<input class="form-control mr-sm-2" type="search" placeholder="Search Location" aria-label="Search">
 			</form>
 			</div>
-			<div class="col-2">
-			<button class="btn btn-warning">Search</button>
+			<div class="col-lg-2 col-md-12 my-auto">
+			<button class="btn btn-blue my-2">Search</button>
 			</div>
 			</div>
-			<p> History </p>
-			<div class="card-deck">
-  <div class="card">
-    <img src="images/avatar.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Job Posting</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="images/avatar.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Job Posting</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="images/avatar.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Job Posting</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="images/avatar.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Job Posting</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
+			<p class="h3" style="color:#FFFFFF; text-align: center; font-size: 30px;padding-top:30px;">History </p>
+			
+
+    <div class="card-deck">
+     
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 mb-4">
+                <div class="card job-card pt-4 h-100 px-3">
+                    <img src="images/avatar.png" class="profile-img mb-4" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Job Posting</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-12 mb-4">
+            
+                <div class="card job-card pt-4 h-100 px-3">
+                    <img src="images/avatar.png" class="profile-img mb-4" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Job Posting</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+            
+            </div>
+            
+            <div class="col-lg-4 col-sm-12 mb-4">
+                <div class="card job-card pt-4 mb-4 h-100 px-3">
+                <img src="images/avatar.png" class="profile-img mb-4" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Job Posting</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+        </div>
 </div>
-			
-			
-		</div>
-	</div>
-	</div>
+     
+</div>
+</div>
+</div>	
+	<div class="container my-4">
 	<div class="col-12">
-	<div class="card border-warning">
+	<div class="card">
 	<h5 class="card-header">Suggestions</h5>
 	<div class="card-body">
 	<div class="card-deck">
-  <div class="card">
-    <img src="images/profile.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Job Posting</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+	
+	<div class="row">
+       <div class="col-lg-4 col-md-12 mb-4">
+           <div class="card job-card pt-4 h-100 px-2">
+            <img src="images/avatar.png" class="profile-img-smaller mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Job Posting</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+           
+        </div>
+        
+        <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card job-card pt-4 h-100 px-2">
+            <img src="images/avatar.png" class="profile-img-smaller mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Job Posting</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        
+        </div>
+        
+        <div class="col-lg-4 col-md-12 mb-4">
+        
+            <div class="card job-card pt-4 h-100 px-2">
+            <img src="images/avatar.png" class="profile-img-smaller mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Job Posting</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
-    <img src="images/profile.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Job Posting</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="images/profile.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Job Posting</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="images/profile.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Job Posting</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
 </div>
     </div>
 	</div>
 	</div>
+	
+	
+	<br>
+	
 	<div class="col-12">
-	<div class="card border-warning">
+	<div class="card">
 	<h5 class="card-header">My Applications</h5>
 	<div class="card-body">
 	<ul class="list-group list-group-flush">
 		<li class="list-group-item" >
 		<img src="images/logo_black.png" width="12%"></img>
 		<b>Some Job Info</b>  <p>Information text about the job listed goes here.</p>
-		<div style="float: right"><button class="btn btn-warning">View Job</button>
+		<div style="float: right"><button class="btn btn-yellow btn-styled mx-1">View Job</button>
 		<input type="checkbox" aria-label="Checkbox for following text input"> Accepted
 		<input type="checkbox" aria-label="Checkbox for following text input"> Denied</div>
 		</li>
-		<li class="list-group-item" >
+		<li class="list-group-item">
 		<img src="images/logo_black.png" width="12%"></img>
 		<b>Some Job Info</b>  <p>Information text about the job listed goes here.</p>
-		<div style="float: right"><button class="btn btn-warning">View Job</button>
+		<div style="float: right"><button class="btn btn-yellow btn-styled mx-1">View Job</button>
 		<input type="checkbox" aria-label="Checkbox for following text input"> Accepted
 		<input type="checkbox" aria-label="Checkbox for following text input"> Denied</div>
 		</li>
 		
-	</ul>
+    </ul>
     </div>
-	</div>
-	</div>
-	
+    </div>
+    </div>
 
 
 
 </div>
+</div>
+
+</div>
 </body>
 </html>
+
