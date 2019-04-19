@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="styles/styles.css">
+	
+	
+	<!--- FONT AWESOME FOR ICONS - SAMANTHA S --->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -19,10 +23,65 @@
 	
 	
     <title>Clusterizr</title>
-	
+    
+    <style>
+        /*--- ADDED CLASSES - SAMANTHA S ---*/
+        .text-yellow {
+            color: #FFC904 !important;
+        }
+        .text-black {
+            color: black;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .text-blue {
+            color: #0066ff;
+        }
+        .text-gray {
+            color: lightgray;
+        }
+        .btn-red {
+            background: #F13959;
+            color: white;
+        }
+        .btn-red:hover {
+            color: white;
+            background: #bc2d45;
+        }
+        .btn-blue {
+            background: #0066ff;
+            color: white;
+        }
+        .btn-blue:hover {
+            background: 0050c9;
+        }
+        .btn-yellow{
+            background: #ffc904;
+            color: black;
+        }
+        .btn-yellow:hover {
+            background: #e2b204;
+        }
+        .profile-img {
+            max-width: 50px;
+        }
+        
+        /*Small devices (landscape phones, 576px and below)*/
+        @media all and (max-width: 576px) {
+
+            
+            .messages .form-control{
+                max-width: 230px;
+            }
+
+        }
+    </style>
+    
+    </head>
 	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"></img></a>
+  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -33,6 +92,9 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="clusterizr_home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#">Notifications</a>
@@ -56,6 +118,9 @@
 	  <li class="nav-item">
         <a class="nav-link" href="myaccount.html">My Account</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
     </ul>
 	  <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -70,55 +135,66 @@
     
   </div>
 </nav>
-</head>
+
 
 <body>
 
-<div class="container" style="padding-top:10px">
+<div class="container my-4">
+
 <div class="row">
-	<div class="col-4">
-	<div class="card" style="width: 18rem;">
+	<div class="col-lg-5 col-md-12 mb-4">
+	<div class="card">
 	  <div class="card-header">
-	  Messages <img src="images/Messages.png" style="float: right;"></img>
+	  <div class="row">
+	      <div class="col-6">
+	          Messages
+	      </div>
+	      <div class="col-6 text-right">
+	          <i class="fas fa-envelope text-yellow"></i>
+	      </div>
 	  </div>
-	<div class="card-body">
-    <form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-warning btn-sm" style="float: right"; type="submit"><img src="images/Search.png"></img></button>
-	</form>
+	  </div>
+	<div class="card-body messages">
+    <div class="mb-4">
+        <form class="form-inline my-2 my-sm-0 justify-content-center">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button type="button" class="btn btn-yellow mx-2"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    
     
 	<ul class="list-group list-group-flush">
   
     <li class="list-group-item">
-	<img src="images/Avatar.png" width="25%"></img>
+	<img src="images/Avatar.png" class="profile-img"/><br>
 	Message text here for the messages to be sent to and from the parties.
 	</li>
 	
     <li class="list-group-item">
-	<img src="images/Avatar.png" width="25%"></img>
+	<img src="images/Avatar.png" class="profile-img"/><br>
 	Message text here for the messages to be sent to and from the parties.
 	</li>
 	
     <li class="list-group-item">
-	<img src="images/Avatar.png" width="25%"></img>
+	<img src="images/Avatar.png" class="profile-img"/><br>
 	Message text here for the messages to be sent to and from the parties.
 	</li>
 	
 	<li class="list-group-item">
-	<img src="images/Avatar.png" width="25%"></img>
+	<img src="images/Avatar.png" class="profile-img"/><br>
 	Message text here for the messages to be sent to and from the parties.
 	</li>
 	</ul>
   
 	<div class="card-body">
-    <a href="#" class="card-link">...Load More</a>
+    <a href="#" class="card-link">Load More...</a>
     
 	</div>
 </div>
 </div>
 </div>
 
-<div class="col-8">
+<div class="col-lg-7 col-md-12">
 	<div class="card">
 	<div class="card-header">
 	New Message
@@ -131,8 +207,8 @@
 	<textarea class="form-control" aria-label="With textarea" rows="12">
 	Type your message here...
 	</textarea>
-	</div>
-	<button class="btn btn-warning btn-lg" type="submit" style="float: right">Send</button>
+	</div><br>
+	<button class="btn btn-yellow" type="submit" style="float: right">Send Message <i class="fas fa-paper-plane"></i></button>
 	</div>
 	</div>
 	</div>
