@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS - UPDATED TO NEWEST VERSION - SAMANTHA S -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
 	<link rel="stylesheet" href="styles/styles.css">
 	
 	<!--- FONT AWESOME FOR ICONS - SAMANTHA S --->
@@ -47,6 +48,13 @@
             color: white;
             background: #bc2d45;
         }
+        .btn-blue {
+            background: #0066ff;
+            color: white;
+        }
+        .btn-blue:hover {
+            background: 0050c9;
+        }
         .btn-yellow{
             background: #ffc904;
             color: black;
@@ -83,9 +91,12 @@
             text-align: left;
             margin: 0;
         }
-        
-        .force-vert-align {
-            vertical-align: middle;
+        .list-group-select li.list-group-item:hover {
+            background: #ffc904;
+            color: black;
+        }
+        .list-group-select {
+            text-align: center;
         }
         
         /*--- NAVBAR FIX? ---*/
@@ -104,9 +115,6 @@
                 padding-left: 1em;
                 padding-right: 1em;
             }
-            .my-info .btn {
-                display: block;
-            }
 
         }
 
@@ -120,9 +128,7 @@
                 padding-left: 2em;
                 padding-right: 2em;
             }
-            .my-info .btn {
-                margin: 1em;
-            }
+            
             .center-img{
                 text-align: center!important;
             }
@@ -209,117 +215,84 @@
        
        <div class="row">
           
-           <div class="col-lg-9 col-md-12">            
-             <div class="card mb-4 my-info" >
+           <div class="col-lg-3 col-md-12">
+            
+                <div class="card mb-4 my-info" >
                   <div class="card-header">My Info</div>
                    <div class="row p-1">
-                       <div class="col-lg-4 col-md-6 my-auto center-img">
+                       <div class="col-12 my-auto center-img">
                           <img src="images/luis-villasmil-1222180-unsplash.png" class="card-img-top rounded-circle p-4 profile-img" alt="profile avatar">
                        </div>
-                        <div class="col-lg-4 col-md-6 my-auto">
+                        <div class="col-12 my-auto">
                             <div class="container-fluid py-3">
                             <h5>User Profile</h5>
                             <p class="card-text">Simple bio area for users to add a short description of themselves.</p>
-                            <h5 class="card-title">Find Me On:</h5>
-                            <p class="card-text">
-                            <span class="fa-stack fa-md my-1">
-                              <i class="fa fa-circle fa-stack-2x github"></i>
-                              <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                            </span> 
-                            <span class="fa-stack fa-md my-1">
-                              <i class="fa fa-circle fa-stack-2x linkedin"></i>
-                              <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <span class="fa-stack fa-md my-1">
-                              <i class="fa fa-circle fa-stack-2x twitter"></i>
-                              <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>  
-                            <span class="fa-stack fa-md my-1">
-                              <i class="fa fa-circle fa-stack-2x facebook"></i>
-                              <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <span class="fa-stack fa-md my-1">
-                              <i class="fa fa-circle fa-stack-2x insta"></i>
-                              <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                            </span>  
                             </div>
-                        
                        </div>
-                    <div class="col-lg-4 col-md-12 my-auto text-center">
-                       <div class="container-fluid py-3">
-                           <a href="#" class="btn btn-red btn-styled my-2">View Resume <i class="fas fa-external-link-alt px-1"></i></a>
-                           <a href="#" class="btn btn-red btn-styled my-2">View Portfolio <i class="fas fa-external-link-alt px-1"></i></a>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-12 text-center mb-4"> 
-            <div class="card h-100 bg-light">
-             <ul class="list-group my-auto list-group-flush">
-                <li class="list-group-item bg-light"><a href="#" class="text-black"><img src="images/Messages.png" class="mb-1"/><br>Messages</a></li>
-                <li class="list-group-item bg-light"><a href="#" class="text-black"><img src="images/Sections.png" class="mb-1"/><br>My Pages</a></li>
-                <li class="list-group-item bg-light"><a href="#" class="text-black"><img src="images/Search.png" class="mb-1"/><br>Explore</a></li>
-                <li class="list-group-item bg-light"><a href="#" class="text-black"><img src="images/Profile.png" class="mb-1"/><br>My Network</a></li>
-            </ul> 
-            </div>  
-        </div>
-    </div>
-    
-    <div class="row">
-       <div class="col-lg-9 col-md-12 mb-4">
-       
-               <div class="card" >
-                    <div class="card-header"> Posts </div>
+        
+                <div class="card my-4 bg-light">
+                 <ul class="list-group my-auto list-group-flush list-group-select">
+                    <li class="list-group-item bg-light"><a href="#" class="text-black"><i class="fas fa-envelope text-yellow"></i><br>Messages</a></li>
+                    <li class="list-group-item bg-light"><a href="#" class="text-black"><i class="fas fa-user-circle text-yellow"></i><br>My Account</a></li>
+                    <li class="list-group-item bg-light"><a href="#" class="text-black"><i class="fas fa-network-wired text-yellow"></i><br>My Network</a></li>
+                    <li class="list-group-item bg-light"><a href="#" class="text-black"><i class="fas fa-search text-yellow"></i><br>Explore</a></li>
+
+                </ul> 
+            
+                </div>
+                        
+             
+            
+           </div>    
+        <div class="col-lg-6 col-md-12 mb-4"> 
+            <div class="card" >
+                    <div class="card-header"> Updates </div>
                     <div class="px-2">
                         <div class="card-body">
-                            <h5 class="card-title">New post</h5>
+                            <h5 class="card-title">New Job post related to your search <i class="fas fa-external-link-alt"></i></h5>
                             <h6 class="card-subtitle mb-2 text-muted small">12 hours ago</h6>
                             <p class="card-text">Some quick example text for a post.</p>
                             <hr>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">My First Post</h5>
+                            <h5 class="card-title">New Job post related to your highlights <i class="fas fa-external-link-alt"></i></h5>
                             <h6 class="card-subtitle mb-2 text-muted small">1 day ago</h6>
+                            <p class="card-text">Some quick example text for a post.</p>
+                            <hr>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">A person in your network just shared a post <i class="fas fa-external-link-alt"></i></h5>
+                            <h6 class="card-subtitle mb-2 text-muted small">1 day ago</h6>
+                            <p class="card-text">Some quick example text for a post.</p>
+                            <hr>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">A person in your network just updated their resume <i class="fas fa-external-link-alt"></i></h5>
+                            <h6 class="card-subtitle mb-2 text-muted small">1 day ago</h6>
+                            <p class="card-text">Some quick example text for a post.</p>
+                            <hr>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">A company you searched just made a profile <i class="fas fa-external-link-alt"></i></h5>
+                            <h6 class="card-subtitle mb-2 text-muted small">2 days ago</h6>
                             <p class="card-text">Some quick example text for a post.</p>
                             <hr>
 
                             <div class="p-2 text-center">
-                            <a href="#" class="btn btn-red btn-styled">Update Feed</a>
+                            <a href="#" class="btn btn-yellow btn-styled">Update Feed <i class="fas fa-sync"></i></a>
                             </div>
                         </div>
                     </div>
                     
 		        </div>
-       
-            
-	            <div class="card mt-4">
-		            <div class="card-header">
-		                Create a Post
-		            </div>
-		            <div class="card-body">
-		                <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                        <hr>
-                        <form>
-                            <div class="form-group pt-4">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <div class="py-1 text-center">
-                                <button type="button" class="btn btn-red btn-styled">
-                                    Add Post
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-12 mb-4">
+        </div>
+        
+        <div class="col-lg-3 col-md-12 mb-4">
                 <div class="card updates-card">
                     <div class="card-body">
-                        <h5 class="card-title">Similar Profiles:</h5>
+                        <h5 class="card-title">Recommended:</h5>
                         <div class="py-1 similar-profiles">
                            <i class="fas fa-chevron-left text-gray px-1"></i>
                            <img class="similar-pro-img rounded-circle border" src="http://placekitten.com/40/40"/>
@@ -352,9 +325,15 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        
     </div>
+    
+    </div>    
        
-	
+  
+ 
+
+ 
+  
 </body>
 </html>
