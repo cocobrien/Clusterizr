@@ -15,7 +15,68 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	
 	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
+<style>
+    .searchevent{
+        width: 80%;
+        position: relative;
+        float: right;
+    }
+    .discover{
+        position: relative;
+        float: right;
+    }
+    .ubtt{
+        
+    }
+    .events{
+        float: right;
+        
+    }
+    .eventcard{
+        margin-top: 20px;
+    }
+    #eventimg{
+        width:100%;
+        height: 300px;
+    }
+    .calendar{
+        float: left;
+        position: relative;
+        width: 100%;
+    }
+    .btn{
+        background-color: #F13959;
+    }
+    .btn:hover{
+        background-color: black;
+        color:#FFC904;
+    }
+    @media only screen and (max-width: 600px) {
+        .searchevent{
+            
+        }
+        .discover{
+            padding: none;
+            border-style: none;
+        }
+        .events{
+            
+        }
+        .calendar{
+            width: 75vw;
+            height: 50vh;
+        }
+        .ubtt{
+            margin: none;
+        }
+        #eventimg{
+            height: 50%;
+        }
+        .calendar{
+            margin-bottom: 200px;
+        }
+    }
+</style>
 	
 	
     <title>Clusterizr</title>
@@ -63,7 +124,7 @@
 	  
 	  <ul class="nav justify-content-end">
       <li class="nav-item" style="float:right">
-        <a style="color:#FFC904" href="#">Log Out</a>
+        <a style="color:#FFC904" href="signin.html">Log Out</a>
       </li>
     </ul>
     
@@ -73,43 +134,47 @@
 
 <body>
 <div class="container" style="padding-top:10px;">
-	<div class="col-12">
-		<div class="card">
+
+<div class="col-lg-4 col-md-4 calendar">
+<div class="row" style="padding-top:20px;">
+	<div class="col-lg-12 col-md-12">
+	<h5>Calendar</h5>
+	<div class="card mb-3">
+	<iframe src="https://calendar.google.com/calendar/embed?showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n3v85i9d7uafg2v8a40j0gdql4%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FChicago" style="border-width:0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
+	</div>
+	</div>
+    </div>
+    </div>
+<div class="col-md-8 col-sm-12 discover">
+	            <h5>Discover Events</h5>	
+    <div class="card">
+
 		<div class="card-body">
-		
-			<p> Discover Events </p>
-			<div class="card text-center">
+			<div class="card searchevent text-center">
 			<div class="row">
-			<div class="col-5">
+			<div class="col-lg-5 col-md-12 ubtt">
 			<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="search" placeholder="Events" aria-label="Search">
 			</form>
 			</div>
-			<div class="col-5">
+			<div class="col-lg-5 col-md-12 ubtt">
 			<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="search" placeholder="Location" aria-label="Search">
 			</form>
 			</div>
-			<div class="col-2">
-			<button class="btn btn-warning">Search</button>
+			<div class="col-lg-2 col-md-2 ubtt">
+			<button class="btn">Search</button>
 			</div>
 			</div>
 		</div>
 		</div>
 	</div>
-	</div>
-
-<div class="container">
-<div class="row" style="padding-top:20px;">
-	<div class="col">
-	<h5>Calendar</h5>
-	<div class="card border-warning mb-3" style="max-width: 18rem;">
-	<img src="images/calendar.png" width="100%"></img>
-	
-	</div>
+	</div>    
+    <div class="container col-md-8 col-sm-12 events">
+    <div class="row" style="padding:20px;">
 	<h5> Type of Events </h5>
-	<div class="dropdown">
-	<button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<div class="dropdown" style="margin-left:10px;">
+	<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Select Category
 	</button>
 	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -122,10 +187,10 @@
 	</div>
 	</div>
 	
-	<div class="col-9">
+	<div class="col-12 eventcard" style="padding:none;">
 	<div class="card">
 	  <div class="card-header">
-	  Events</div>
+	  Events</div>               
 	<div class="card-body">
     
     
@@ -133,23 +198,24 @@
   
     <li class="list-group-item">
 	
-	<h5>Event Name</h5> <p> Date </p> <p> Location </p>
-		<div style="float: right"><a href="eventpage.html"><button class="btn btn-warning">View Event</button></a>
-	<button class="btn btn-warning">Interested</button></div>
+	<img id="eventimg" src="https://embed.widencdn.net/img/visitorlando/uekppaql7r/800x600px/178387_bowling1.jpeg?position=c&crop=no&color=ffffff&quality=100&u=er4pqc">
+        <h5>Bowling with Zuckerberg</h5> <p> May 09, 2019 </p> <p> The Bowling Alley </p>
+		<div style="float: right"><a href="eventpage.html"><button class="btn">View Event</button></a>
+	<button class="btn">Interested</button></div>
 	</li>
 	
     <li class="list-group-item">
-	
-	<h5>Event Name</h5> <p> Date </p> <p> Location </p>
-	<div style="float: right"><a href="eventpage.html"><button class="btn btn-warning">View Event</button></a>
-	<button class="btn btn-warning">Interested</button></div>
+	<img id="eventimg" src="https://www.socoolevents.com/storage/app/media/locations/sc-location-orlando.jpg">
+	<h5>Wheel and Deal</h5> <p> May 15, 2019 </p> <p> Orlando Fair grounds </p>
+	<div style="float: right"><a href="eventpage2.html"><button class="btn ">View Event</button></a>
+	<button class="btn">Interested</button></div>
 	</li>
 	
     <li class="list-group-item">
-	
-	<h5>Event Name</h5> <p> Date </p> <p> Location </p>
-	<div style="float: right"><a href="eventpage.html"><button class="btn btn-warning">View Event</button></a>
-	<button class="btn btn-warning">Interested</button></div>
+	<img id="eventimg" src="https://media2.fdncms.com/orlando/imager/u/original/14972038/1000w_player1_ricky_brigante_outsidethemagic-com.jpg">
+	<h5>Playing with Players</h5> <p> June 14, 2019 </p> <p> Player One I-drive </p>
+	<div style="float: right"><a href="eventpage3.html"><button class="btn">View Event</button></a>
+	<button class="btn">Interested</button></div>
 	</li>
 	
 	
@@ -162,7 +228,7 @@
 
 </div>
 </div>
-</div>
+
 </div>
 
 </body>

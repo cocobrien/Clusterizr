@@ -15,7 +15,75 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	
 	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<style>
+    .cssCircle {
+        -webkit-border-radius: 999px;
+        -moz-border-radius: 999px;
+        border-radius: 999px;
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+        background: #F13959;
+        color: #ffffff;
+        text-align: center;
+        -webkit-transition: background 0.2s linear;
+        -moz-transition: background 0.2s linear;
+        -ms-transition: background 0.2s linear;
+        -o-transition: background 0.2s linear;
+        transition: background 0.2s linear;
+        transition: color 0.2s linear;
+        font: 30px Arial, sans-serif
+    }
 
+    .cssCircle:hover {
+        background: black;
+        cursor: pointer;
+    }
+
+    .plusSign {
+        line-height: 1.1em;
+    }
+
+    .plusSign:hover {
+        color: #FFC904;
+    }      
+    .add{
+        float: left;
+    }
+    
+    .profilepic{
+        margin-bottom: 10px;
+        width: 60%;
+    }
+    .highlights{
+        position: relative;
+        float: left;
+    }
+    .info{
+        float: left;
+    }
+    table{
+        font-size: 2vw;
+    }
+    .btn{
+        background-color: #F13959;
+        float: right;
+    }
+    .btn:hover{
+        background-color: black;
+        color:#FFC904;
+
+    }
+    @media only screen and (max-width: 900px){
+        .profilepic{
+            width: 90%;
+        }
+        table{
+            width: 100%;
+        }
+    }
+  
+</style>
 	
 	
     <title>Clusterizr</title>
@@ -65,7 +133,7 @@
 	  
 	  <ul class="nav justify-content-end">
       <li class="nav-item" style="float:right">
-        <a style="color:#FFC904" href="#">Log Out</a>
+        <a style="color:#FFC904" href="signin.html">Log Out</a>
       </li>
     </ul>
     
@@ -76,7 +144,7 @@
 <body>
 <div class="container" style="padding-top:10px">
 	<div class="col-12">
-		<div class="card border-warning">
+		<div class="card ">
 		
 		<div class="card-body">
 		<img src="images/logo_black.png">	
@@ -86,35 +154,60 @@
 	</div>
 	
 	<div class="col-12">
-	<div class="card border-warning">
-	<h5 class="card-header"><button class="btn btn-warning" style="float:right">Edit</button></h5>
+	<div class="card">
+	<h5 class="card-header"><button class="btn">Edit</button></h5>
 	<div class="card-body">
 	
+	<div class="col-lg-4 col-sm-12 info">
+	<img class="profilepic" src="images/avatar.png"><div class="cssCircle plusSign add">
+  &#43;
+</div>
+        <br>
+	<h3> Joe Blow </h3>
+        <br>
+	<h4> Student of Web Design </h4>
+        <br>
+	<h5> joeblow@knights.ucf.edu </h5>
 	
-	<img src="images/avatar.png" width="15%"></img>
-	<h3> Name Name </h3>
-	<h4> Title of Job </h4>
-	<p> email@email.com </p>
-	
-	
+	<br>
+        </div>
+        <div class="col-lg-8 col-sm-12 highlights">
 	<h4> Highlights </h4>
 	<div class="card-deck">
   <div class="card">
-    <img src="images/sections.png" class="card-img-top" alt="...">
+    <table>
+    <tr>
+    <td> &#x2b; Web Design</td>
+    <td> &#x2b; Event Planing</td>
+    </tr>
+    <tr>
+    <td> &#x2b; Digital Marketing</td>
+    <td> &#x2b; Adobe ai, ps, xd</td>
+    </tr>
+    <tr>
+    <td> &#x2b; E-Commerce</td>
+    <td> &#x2b; Web Design</td>
+    </tr>
+    <tr>
+    <td> &#x2b; Branding</td>
+    <td> &#x2b; HTML/CSS/Java/php</td>
+    </tr>
+    <tr>
+    <td> &#x2b; Social Media Marketing</td>
+    <td> &#x2b; Wix/Squarespace/Wordpress</td>
+    </tr>
+    <tr>
+    <td> &#x2b; Owns a cat</td>
+    <td> &#x2b; Group Project Expirence</td>
+    </tr>
+    <tr>
+    <td> &#x2b; Bootstrap knowledge</td>
+    <td> &#x2b; Life Lessons from my profs</td>
+    </tr>
+</table>
+
   </div>
-  
-  <div class="card">
-    <img src="images/sections.png" class="card-img-top" alt="...">
   </div>
-  
-  <div class="card">
-    <img src="images/sections.png" class="card-img-top" alt="...">
-  </div>
-  
-  <div class="card">
-    <img src="images/sections.png" class="card-img-top" alt="...">
-  </div>
-  
 </div>
     </div>
 	</div>
@@ -123,29 +216,33 @@
 	<div class="row">
 	<div class="col">
 	<div class="col">
-	<div class="card border-warning">
+	<div class="card">
 	<h5 class="card-header">Create a Post</h5>
 	<div class="card-body">
     <h5 class="card-title">Some Jobs</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <textarea rows="4" cols="50">Create a Job Post...
+</textarea>
+        <button class="btn">Submit</button>
 	</div>
 	</div>
 	</div>
 	<div class="col">
-	<div class="card border-warning">
-	<h5 class="card-header">Recognition</h5>
+	<div class="card">
+	<h5 class="card-header">Expirience</h5>
 	<div class="card-body">
-    <h5 class="card-title">Some Jobs</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <h5 class="card-title">Lifeguard</h5>
+    <p class="card-text">Seaworld Lifequear 23 years</p>
+    <h5>Professor</h5><p class="card-text">Professor at UCF downtown campus ~.1 semester</p>
+
 	</div>
 	</div>
 	</div>
 	<div class="col">
-	<div class="card border-warning">
+	<div class="card">
 	<h5 class="card-header">Education</h5>
 	<div class="card-body">
     <h5 class="card-title">Some Jobs</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <p class="card-text">University of West Florida- Bachelors of Graphic Design 2015</p>
 	</div>
 	</div>
 	</div>
@@ -153,21 +250,21 @@
 	
 	<div class="col">
 	<div class="col">
-	<div class="card border-warning">
+	<div class="card">
 	<h5 class="card-header">My Applications</h5>
 	<div class="card-body">
 	<ul class="list-group list-group-flush">
 		<li class="list-group-item" >
 		<img src="images/logo_black.png" width="12%"></img>
-		<b>Some Job Info</b>  <p>Information text about the job listed goes here.</p>
-		<div style="float: right"><button class="btn btn-warning">View Job</button>
+		<b>Coffee Intern</b>  <p>We just want someone to walk to starbucks, we pay in expirience </p>
+		<div><button class="btn">View Job</button>
 		<input type="checkbox" aria-label="Checkbox for following text input"> Accepted
 		<input type="checkbox" aria-label="Checkbox for following text input"> Denied</div>
 		</li>
 		<li class="list-group-item" >
 		<img src="images/logo_black.png" width="12%"></img>
-		<b>Some Job Info</b>  <p>Information text about the job listed goes here.</p>
-		<div style="float: right"><button class="btn btn-warning">View Job</button>
+		<b>Web Designer Needed</b>  <p>Someone please come fix our wordpress. We pay in expirience</p>
+		<div><button class="btn">View Job</button>
 		<input type="checkbox" aria-label="Checkbox for following text input"> Accepted
 		<input type="checkbox" aria-label="Checkbox for following text input"> Denied</div>
 		</li>
