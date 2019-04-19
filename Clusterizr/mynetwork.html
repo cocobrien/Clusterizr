@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
 	<link rel="stylesheet" href="styles/styles.css">
+	
+	<!--- FONT AWESOME FOR ICONS - SAMANTHA S --->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -17,12 +21,67 @@
 	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	
-	
     <title>Clusterizr</title>
-	
+    
+    <style>
+        /*--- ADDED CLASSES - SAMANTHA S ---*/
+        .text-yellow {
+            color: #FFC904 !important;
+        }
+        .text-black {
+            color: black;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .text-blue {
+            color: #0066ff;
+        }
+        .text-gray {
+            color: lightgray;
+        }
+        .btn-red {
+            background: #F13959;
+            color: white;
+        }
+        .btn-red:hover {
+            color: white;
+            background: #bc2d45;
+        }
+        .btn-blue {
+            background: #0066ff;
+            color: white;
+        }
+        .btn-blue:hover {
+            background: 0050c9;
+        }
+        .btn-yellow{
+            background: #ffc904;
+            color: black;
+        }
+        .btn-yellow:hover {
+            background: #e2b204;
+        }
+        .profile-img {
+            max-width: 50px;
+        }
+        
+        /*Small devices (landscape phones, 576px and below)*/
+        @media all and (max-width: 576px) {
+
+            
+            .messages .form-control{
+                max-width: 230px;
+            }
+
+        }
+    
+    </style>
+    
+    </head>
 	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"></img></a>
+  <a class="navbar-brand" href="#"><img src="images/logo_white.png" width="50%"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -33,6 +92,9 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="clusterizr_home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="messages.html">Notifications</a>
@@ -56,6 +118,9 @@
 	  <li class="nav-item">
         <a class="nav-link" href="myaccount.html">My Account</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
     </ul>
 	  <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -70,119 +135,128 @@
     
   </div>
 </nav>
-</head>
 
 <body>
 
-<div class="container" style="padding-top:10px;">
-<div class="row">
-	<div class="col-3">
-	<div class="card" style="width: 18rem;">
-	  <div class="card-header">
-	  My Network Information
-	  </div>
-	<div class="card-body">
-    
-	<ul class="list-group list-group-flush">
+<div class="container my-4">
+
+
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-header">
+              Network Information
+              </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
   
-    <li class="list-group-item" style="color:#FFC904; padding:10%;">
-	<img src="images/Profile.png" width="15%"></img>
-	<b>My Network</b>
-	</li>
-	
-    <li class="list-group-item" style="color:#FFC904; padding:10%;">
-	<img src="images/Sections.png" width="15%"></img>
-	<b>Companies</b>
-	</li>
-	
-    <li class="list-group-item" style="color:#FFC904; padding:10%;">
-	<img src="images/Search.png" width="15%"></img>
-	<b>Groups</b>
-	</li>
-	
+                <li class="list-group-item p-3">
+                <i class="fas fa-user-circle text-yellow px-1"></i>
+                <b>My Network</b>
+                </li>
+
+                <li class="list-group-item p-3 py-1">
+                <i class="fas fa-list text-yellow px-1"></i>
+                <b>Companies</b>
+                </li>
+
+                <li class="list-group-item p-3">
+                <i class="fas fa-network-wired text-yellow fa px-1"></i>
+                <b>Groups</b>
+                </li>
+                
+                </ul>
+            
+            </div>
+        </div>
+    </div>
     
-	</div>
+    <div class="col-lg-9 col-md-8 col-sm-12 mb-4">
+        <div class="card">
+            <div class="card-header">
+            Requests
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item" >
+                        <div class="row py-1">
+                            <div class="col-lg-6 col-md-12">
+                                <img src="images/Avatar.png" class="profile-img m-2 my-auto"/>
+                                <b>Name Name</b> <i>Job Title</i>
+                            </div>
+                            <div class="col-lg-6 col-md-12 text-right my-auto">
+                                <button class="btn btn-outline-warning mx-2">Deny</button><button class="btn btn-yellow">Accept</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item" >
+                        <div class="row py-1">
+                            <div class="col-lg-6 col-md-12">
+                                <img src="images/Avatar.png" class="profile-img m-2 my-auto"/>
+                                <b>Name Name</b> <i>Job Title</i>
+                            </div>
+                            <div class="col-lg-6 col-md-12 text-right my-auto">
+                                <button class="btn btn-outline-warning mx-2">Deny</button><button class="btn btn-yellow">Accept</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>       
+        </div>
+    </div>
+    </div>
+
+<div class="row">
+
+    <div class="col-lg-12">
+        <div class="card">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link" href="#">All</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">College</a>
+              </li>
+            </ul>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" >
+                    <div class="row py-3">
+                            <div class="col-lg-6 col-md-12">
+                                <img src="images/Avatar.png" class="profile-img m-2 my-auto"/>
+                                <b>Name Name</b> <i>Job Title</i>
+                            </div>
+                            <div class="col-lg-6 col-md-12 text-right my-auto">
+                                <button class="btn btn-outline-warning mx-2">Deny</button><button class="btn btn-yellow">Accept</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item" >
+                    <div class="row py-3">
+                            <div class="col-lg-6 col-md-12">
+                                <img src="images/Avatar.png" class="profile-img m-2 my-auto"/>
+                                <b>Name Name</b> <i>Job Title</i>
+                            </div>
+                            <div class="col-lg-6 col-md-12 text-right my-auto">
+                                <button class="btn btn-outline-warning mx-2">Deny</button><button class="btn btn-yellow">Accept</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
 </div>
-</div>
-
-
-
-
-
-
 
 	
-	
-	<div class="col-9">
-	<div class="card">
-	<div class="card-header">
-	Requests
-	</div>
-	<div class="card-body">
-	<ul class="list-group list-group-flush">
-	
-		<li class="list-group-item" >
-		<img src="images/Avatar.png" width="13%"></img>
-		<b>Name Name</b> <i>Job Title</i>
-		<div style="float: right"><button class="btn btn-outline-warning">Deny</button><button class="btn btn-warning">Accept</button></div>
-		</li>
-		
-		<li class="list-group-item" >
-		<img src="images/Avatar.png" width="13%"></img>
-		<b>Name Name</b> <i>Job Title</i>
-		<div style="float: right"><button class="btn btn-outline-warning">Deny</button><button class="btn btn-warning">Accept</button></div>
-		</li>
-		
-		
-	
-	</div>
-	</div>
-	</div>
 </div>
-
-<div class="col-12">
-<div class="card">
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link" href="#">All</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Recently Added</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Work</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">College</a>
-  </li>
-</ul>
-
-	<ul class="list-group list-group-flush">
-		<li class="list-group-item" >
-		<img src="images/Avatar.png" width="12%"></img>
-		<b>Name Name</b> <i>Job Title</i>
-		<div style="float: right"><button class="btn btn-warning">Send Message</button></div>
-		</li>
-		<li class="list-group-item" >
-		<img src="images/Avatar.png" width="12%"></img>
-		<b>Name Name</b> <i>Job Title</i>
-		<div style="float: right" ><button class="btn btn-warning" >Send Message</button></div>
-		</li>
-	</ul>
-</div>
-</div>
-</div>
-
-
-
-
-
 
 </body>
 </html>
-
-
-
-
-
-</head>
